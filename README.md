@@ -44,7 +44,7 @@ Este proyecto está bajo la Licencia **MIT**.
 
 - La idea es generar un sitio web con apuntes de git amigables y entendibles 📢
 - Cualquier ayuda o sugerencia es bienvenida
-- 🇨🇱
+- Saludos desde 🇨🇱 !!
 
 ---
 
