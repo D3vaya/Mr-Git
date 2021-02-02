@@ -1,0 +1,29 @@
+a.nav-link,
+figure.icon-submenu {
+  display: inline-block;
+}
+li {
+  margin-top: 10px;
+  padding: 2px;
+  a.nav-link {
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.1em;
+    width: 80%;
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+
+.submenu a {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  img {
+    height: 18px !important;
+  }
+}
+.submenu li {
+  color: #000;
+}

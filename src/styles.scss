@@ -1,5 +1,7 @@
 body {
   font-family: "Source code Pro";
+  background-image: url("./assets/img/bg/body.jpeg");
+  background-repeat: repeat;
 }
 
 .fixed-top {
@@ -8,4 +10,10 @@ body {
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+@font-face {
+  font-family: "Potta One";
+  src: local("Potta One"),
+    url(./assets/fonts/brand/PottaOne-Regular.ttf) format("truetype");
 }

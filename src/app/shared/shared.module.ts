@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LinkComponent } from './components/link/link.component';
 import { NavCoursesComponent } from './components/nav-courses/nav-courses.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,14 @@ import { NavCoursesComponent } from './components/nav-courses/nav-courses.compon
     FooterComponent,
     LinkComponent,
     NavCoursesComponent,
+    SidebarComponent,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     LinkComponent,
     NavCoursesComponent,
+    SidebarComponent,
   ],
   imports: [CommonModule, SharedRoutingModule],
 })

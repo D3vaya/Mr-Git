@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-chapter-container',
   templateUrl: './chapter-container.component.html',
-  styleUrls: ['./chapter-container.component.scss']
+  styleUrls: ['./chapter-container.component.scss'],
 })
 export class ChapterContainerComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

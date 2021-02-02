@@ -5,7 +5,8 @@ import { CourseRoutingModule } from './course-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BranchesComponent } from './branches/branches.component';
 import { ChapterContainerComponent } from './containers/chapter-container/chapter-container.component';
-import { ListChaptersComponent } from './list-chapters/list-chapters.component';
+import { ListChaptersComponent } from './containers/list-chapters/list-chapters.component';
+import { ChapterComponent } from './chapter/chapter.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ListChaptersComponent } from './list-chapters/list-chapters.component';
     BranchesComponent,
     ChapterContainerComponent,
     ListChaptersComponent,
+    ChapterComponent,
   ],
   imports: [CommonModule, CourseRoutingModule],
 })

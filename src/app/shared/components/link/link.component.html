@@ -1,12 +1,26 @@
-<a
-  class="nav-link text-dark"
-  routerLink="{{ params.path }}"
-  routerLinkActive="active"
->
-  {{ params.title }}
-  <img
-    src="../../../assets/img/{{ params.icon }}"
-    height="30"
-    alt="{{ params.title }}"
-  />
-</a>
+<li>
+  <a
+    class="nav-link text-dark"
+    routerLink="{{ params.path }}"
+    routerLinkActive="active"
+  >
+    <img
+      src="../../../assets/img/{{ params.icon }}"
+      height="30"
+      alt="{{ params.title }}"
+    />
+    {{ params.title }}
+  </a>
+  <a (click)="open()" *ngIf="params.subChapter.length > 0">
+    <figure class="icon-submenu">
+      <img
+        src="../../../../assets/img/commons/{{ img }}"
+        alt="ampolleta"
+        height="20"
+      />
+    </figure>
+  </a>
+  <ul class="submenu">
+    <ng-content *ngIf="params.open"></ng-content>
+  </ul>
+</li>

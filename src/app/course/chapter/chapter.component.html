@@ -1,0 +1,23 @@
+<div class="Chapter">
+  <div class="card mt-3 border border-5 border-dark shadow-sm rounded">
+    <div class="card-header padding-card text-center">
+      <h6 class="card-title">
+        <strong>{{ chapter.title }}</strong>
+      </h6>
+      <img
+        src="../../../../assets/img/{{ chapter.icon }}"
+        class="card-img-top"
+        alt="..."
+        height="40"
+      />
+    </div>
+    <div class="card-body padding-card">
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+      </p>
+      <a routerLink="{{ chapter.path }}" class="btn btn-sm btn-primary"
+        >Go somewhere</a
+      >
+    </div>
+  </div>
+</div>

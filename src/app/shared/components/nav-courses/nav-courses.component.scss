@@ -1,6 +1,7 @@
 nav.navbar {
   height: 50px;
-  background-color: #222f3e !important;
+  background-color: #fff !important;
+  color: #9a9994 !important;
 }
 .nav-scroller {
   z-index: 2;
@@ -8,4 +9,11 @@ nav.navbar {
   overflow-y: hidden;
   font-size: 15px;
   margin-top: 50px !important;
+}
+.navbar-brand {
+  color: #2f3542;
+  font-family: "Potta One", cursive;
+  span {
+    font-size: 1.2em;
+  }
 }
