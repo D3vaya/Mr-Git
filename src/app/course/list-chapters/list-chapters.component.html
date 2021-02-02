@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12 text-center">
+    <h1>Chapters</h1>
+  </div>
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let item of chapters">
+        <div class="card mt-3 border border-5 border-dark shadow-sm rounded">
+          <div class="card-header padding-card text-center">
+            <h6 class="card-title">
+              <strong>{{ item.title }}</strong>
+            </h6>
+            <img
+              src="../../../assets/img/{{ item.icon }}"
+              class="card-img-top"
+              alt="..."
+              height="40"
+            />
+          </div>
+          <div class="card-body padding-card">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+            </p>
+            <a routerLink="{{ item.path }}" class="btn btn-sm btn-primary"
+              >Go somewhere</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
