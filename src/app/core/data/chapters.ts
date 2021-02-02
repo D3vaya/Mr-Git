@@ -16,7 +16,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/config/config',
         icon: 'chapters/engranaje.svg',
         class: 'text-dark',
         open: false,
@@ -24,7 +24,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/config/help',
         icon: 'chapters/engranaje.svg',
         class: 'text-dark',
         open: false,
@@ -32,7 +32,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/config/bugreport',
         icon: 'chapters/engranaje.svg',
         class: 'text-dark',
         open: false,
@@ -42,14 +42,14 @@ export const chapters: Chapter[] = [
     ],
   },
   {
-    path: 'add',
+    path: '/courses/respository',
     icon: 'chapters/caja.svg',
     class: 'text-dark',
     open: false,
-    title: 'Creación de repos',
+    title: 'Creación repos',
     subChapter: [
       {
-        path: '/courses/config/git',
+        path: '/courses/respository/init',
         icon: 'chapters/caja.svg',
         class: 'text-dark',
         open: false,
@@ -57,7 +57,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/respository/clone',
         icon: 'chapters/caja.svg',
         class: 'text-dark',
         open: false,
@@ -67,14 +67,14 @@ export const chapters: Chapter[] = [
     ],
   },
   {
-    path: 'status',
+    path: 'courses/commands',
     icon: 'chapters/capacitacion.svg',
     class: 'text-dark',
     open: false,
     title: 'Comandos basicos',
     subChapter: [
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/add',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -82,7 +82,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/status',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -90,7 +90,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/diff',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -98,7 +98,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/commit',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -106,7 +106,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/notes',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -114,7 +114,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/restore',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -122,7 +122,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/resset',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -130,7 +130,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/remove',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -138,7 +138,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/commands/move',
         icon: 'chapters/capacitacion.svg',
         class: 'text-dark',
         open: false,
@@ -148,14 +148,14 @@ export const chapters: Chapter[] = [
     ],
   },
   {
-    path: 'diff',
+    path: '/courses/branch-merge',
     icon: 'chapters/rompecabezas.svg',
     class: 'text-dark',
     open: false,
     title: 'Ramas y Merge',
     subChapter: [
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/branch',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -163,7 +163,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/checkout',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -171,7 +171,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/switch',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -179,7 +179,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/merge',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -187,7 +187,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/tool',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -195,7 +195,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/log',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -203,7 +203,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/stach',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -211,7 +211,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/tag',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -219,7 +219,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/branch-merge/worktree',
         icon: 'chapters/rompecabezas.svg',
         class: 'text-dark',
         open: false,
@@ -229,14 +229,14 @@ export const chapters: Chapter[] = [
     ],
   },
   {
-    path: 'commit',
+    path: '/courses/remote',
     icon: 'chapters/sitio-web.svg',
     class: 'text-dark',
     open: false,
     title: 'Remote Branches',
     subChapter: [
       {
-        path: '/courses/config/git',
+        path: '/courses/remote/fetch',
         icon: 'chapters/sitio-web.svg',
         class: 'text-dark',
         open: false,
@@ -244,7 +244,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/remote/pull',
         icon: 'chapters/sitio-web.svg',
         class: 'text-dark',
         open: false,
@@ -252,7 +252,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/remote/push',
         icon: 'chapters/sitio-web.svg',
         class: 'text-dark',
         open: false,
@@ -260,7 +260,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/remote/remote',
         icon: 'chapters/sitio-web.svg',
         class: 'text-dark',
         open: false,
@@ -268,7 +268,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/remote/submodule',
         icon: 'chapters/sitio-web.svg',
         class: 'text-dark',
         open: false,
@@ -278,14 +278,14 @@ export const chapters: Chapter[] = [
     ],
   },
   {
-    path: 'commit',
+    path: '/courses/inspection',
     icon: 'chapters/inspeccion.svg',
     class: 'text-dark',
     open: false,
     title: 'Inspección',
     subChapter: [
       {
-        path: '/courses/config/git',
+        path: '/courses/inspection/show',
         icon: 'chapters/inspeccion.svg',
         class: 'text-dark',
         open: false,
@@ -293,7 +293,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/inspection/log',
         icon: 'chapters/inspeccion.svg',
         class: 'text-dark',
         open: false,
@@ -301,7 +301,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/inspection/diff',
         icon: 'chapters/inspeccion.svg',
         class: 'text-dark',
         open: false,
@@ -309,7 +309,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/inspection/tool',
         icon: 'chapters/inspeccion.svg',
         class: 'text-dark',
         open: false,
@@ -317,7 +317,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/inspection/range-diff',
         icon: 'chapters/inspeccion.svg',
         class: 'text-dark',
         open: false,
@@ -325,7 +325,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/inspection/short-log',
         icon: 'chapters/inspeccion.svg',
         class: 'text-dark',
         open: false,
@@ -333,7 +333,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/inspection/describe',
         icon: 'chapters/sitio-web.svg',
         class: 'text-dark',
         open: false,
@@ -392,14 +392,14 @@ export const chapters: Chapter[] = [
     ],
   },
   {
-    path: 'commit',
+    path: '/courses/debugging',
     icon: 'chapters/bug.svg',
     class: 'text-dark',
     open: false,
     title: 'Debugging',
     subChapter: [
       {
-        path: '/courses/config/git',
+        path: '/courses/debugging/bisect',
         icon: 'chapters/bug.svg',
         class: 'text-dark',
         open: false,
@@ -407,7 +407,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/debugging/blame',
         icon: 'chapters/bug.svg',
         class: 'text-dark',
         open: false,
@@ -415,7 +415,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/debugging/grep',
         icon: 'chapters/bug.svg',
         class: 'text-dark',
         open: false,

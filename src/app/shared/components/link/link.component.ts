@@ -14,9 +14,11 @@ export class LinkComponent implements OnInit {
   @Input() params: Chapter;
   constructor() {}
   img: string;
+
   ngOnInit(): void {
     this.img = stateMenu.Off;
   }
+
   open() {
     this.params.open = !this.params.open;
     this.changeStatusImg();

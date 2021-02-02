@@ -1,7 +1,8 @@
 <li>
   <a
     class="nav-link text-dark"
-    routerLink="{{ params.path }}"
+    (click)="open()"
+    *ngIf="params.subChapter.length > 0"
     routerLinkActive="active"
   >
     <img
@@ -10,17 +11,30 @@
       alt="{{ params.title }}"
     />
     {{ params.title }}
-  </a>
-  <a (click)="open()" *ngIf="params.subChapter.length > 0">
     <figure class="icon-submenu">
       <img
         src="../../../../assets/img/commons/{{ img }}"
-        alt="ampolleta"
+        alt="flecha"
+        class="arrow"
         height="20"
       />
     </figure>
   </a>
-  <ul class="submenu">
-    <ng-content *ngIf="params.open"></ng-content>
+
+  <ul class="submenu" *ngIf="params.open">
+    <li *ngFor="let subchapter of params.subChapter">
+      <a
+        class="nav-link text-dark"
+        routerLinkActive="active"
+        routerLink="{{ subchapter.path }}"
+      >
+        <img
+          src="../../../assets/img/{{ subchapter.icon }}"
+          height="30"
+          alt="{{ subchapter.title }}"
+        />
+        {{ subchapter.title }}
+      </a>
+    </li>
   </ul>
 </li>

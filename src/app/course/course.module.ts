@@ -7,6 +7,7 @@ import { BranchesComponent } from './branches/branches.component';
 import { ChapterContainerComponent } from './containers/chapter-container/chapter-container.component';
 import { ListChaptersComponent } from './containers/list-chapters/list-chapters.component';
 import { ChapterComponent } from './chapter/chapter.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,6 @@ import { ChapterComponent } from './chapter/chapter.component';
     ListChaptersComponent,
     ChapterComponent,
   ],
-  imports: [CommonModule, CourseRoutingModule],
+  imports: [CommonModule, CourseRoutingModule, SharedModule],
 })
 export class CourseModule {}

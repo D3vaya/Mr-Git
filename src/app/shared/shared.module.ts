@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LinkComponent } from './components/link/link.component';
 import { NavCoursesComponent } from './components/nav-courses/nav-courses.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { BrandComponent } from './components/brand/brand.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LinkComponent,
     NavCoursesComponent,
     SidebarComponent,
+    BrandComponent,
   ],
   exports: [
     HeaderComponent,
@@ -22,6 +24,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LinkComponent,
     NavCoursesComponent,
     SidebarComponent,
+    BrandComponent,
   ],
   imports: [CommonModule, SharedRoutingModule],
 })
