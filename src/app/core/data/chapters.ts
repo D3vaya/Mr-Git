@@ -42,14 +42,14 @@ export const chapters: Chapter[] = [
     ],
   },
   {
-    path: '/courses/respository',
+    path: '/courses/repository',
     icon: 'chapters/caja.svg',
     class: 'text-dark',
     open: false,
     title: 'Creación repos',
     subChapter: [
       {
-        path: '/courses/respository/init',
+        path: '/courses/repository/init',
         icon: 'chapters/caja.svg',
         class: 'text-dark',
         open: false,
@@ -57,7 +57,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/respository/clone',
+        path: '/courses/repository/clone',
         icon: 'chapters/caja.svg',
         class: 'text-dark',
         open: false,
@@ -350,7 +350,7 @@ export const chapters: Chapter[] = [
     title: 'Patching',
     subChapter: [
       {
-        path: '/courses/config/git',
+        path: '/courses/patching/git',
         icon: 'chapters/parche.svg',
         class: 'text-dark',
         open: false,
@@ -358,7 +358,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/patching/git',
         icon: 'chapters/parche.svg',
         class: 'text-dark',
         open: false,
@@ -366,7 +366,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/patching/git',
         icon: 'chapters/parche.svg',
         class: 'text-dark',
         open: false,
@@ -374,7 +374,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/patching/git',
         icon: 'chapters/parche.svg',
         class: 'text-dark',
         open: false,
@@ -382,7 +382,7 @@ export const chapters: Chapter[] = [
         subChapter: [],
       },
       {
-        path: '/courses/config/git',
+        path: '/courses/patching/git',
         icon: 'chapters/parche.svg',
         class: 'text-dark',
         open: false,
