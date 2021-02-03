@@ -6,8 +6,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LinkComponent } from './components/link/link.component';
 import { NavCoursesComponent } from './components/nav-courses/nav-courses.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BrandComponent } from './components/brand/brand.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CodeComponent } from './code/code.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { BrandComponent } from './components/brand/brand.component';
     NavCoursesComponent,
     SidebarComponent,
     BrandComponent,
+    PageNotFoundComponent,
+    CodeComponent,
   ],
   exports: [
     HeaderComponent,
@@ -25,6 +29,8 @@ import { BrandComponent } from './components/brand/brand.component';
     NavCoursesComponent,
     SidebarComponent,
     BrandComponent,
+    PageNotFoundComponent,
+    CodeComponent,
   ],
   imports: [CommonModule, SharedRoutingModule],
 })

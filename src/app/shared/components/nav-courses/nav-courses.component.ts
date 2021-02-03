@@ -16,6 +16,5 @@ export class NavCoursesComponent implements OnInit {
 
   initChapters() {
     this.chapters = this.coursesService.getChapters();
-    console.log(this.chapters);
   }
 }

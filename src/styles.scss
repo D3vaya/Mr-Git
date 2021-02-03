@@ -1,7 +1,9 @@
+$primary-color: #f0f0e8;
+$secondary-color: #d6d4cc;
+@import "~highlight.js/styles/monokai-sublime.css";
 body {
   font-family: "Source Code Pro", sans-serif, Helvetica;
-  background-image: url("./assets/img/bg/body.jpeg");
-  background-repeat: repeat;
+  background-color: $primary-color !important;
 }
 
 .fixed-top {
@@ -33,4 +35,3 @@ body {
   src: local("Roboto-Light"),
     url(./assets/fonts/web/Roboto-Light.ttf) format("truetype");
 }
-
