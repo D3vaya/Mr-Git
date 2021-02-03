@@ -22,3 +22,15 @@ body {
   src: local("SourceCodePro-Regular"),
     url(./assets/fonts/web/SourceCodePro-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(./assets/fonts/web/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: local("Roboto-Light"),
+    url(./assets/fonts/web/Roboto-Light.ttf) format("truetype");
+}
+
