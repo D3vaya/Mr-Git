@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, UrlSegment } from '@angular/router';
-
+import { HighlightResult } from 'ngx-highlightjs';
 @Component({
   selector: 'app-content-chapter',
   templateUrl: './content-chapter.component.html',
@@ -11,17 +11,22 @@ export class ContentChapterComponent implements OnInit {
     title: '',
     image: '',
   };
-  code = `git  [--version] [--help] [-C <path>] [-c <name>=<value>]
-    [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-    [-p|--paginate|-P|--no-pager] [--no-replace-objects] [--bare]
-    [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-    [--super-prefix=<path>]
-    <command> [<args>]
-  `;
+  response: HighlightResult;
+  code = `git clone https://github/D3vaya`;
   constructor(private activeRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.captureRoute();
+  }
+
+  onHighlight(e) {
+    this.response = {
+      language: e.language,
+      relevance: e.relevance,
+      second_best: '{...}',
+      top: '{...}',
+      value: '{...}',
+    };
   }
 
   captureRoute() {

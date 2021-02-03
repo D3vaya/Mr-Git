@@ -1,8 +1,11 @@
-//@import "~highlight.js/styles/github.css";
+$primary-color: #f0f0e8;
+$secondary-color: #d6d4cc;
+@import "~highlight.js/styles/monokai-sublime.css";
 body {
   font-family: "Source Code Pro", sans-serif, Helvetica;
-  background-image: url("./assets/img/bg/body.jpeg");
-  background-repeat: repeat;
+  // background-image: url("./assets/img/bg/body.jpeg");
+  // background-repeat: repeat;
+  background-color: $primary-color;
 }
 
 @font-face {
@@ -15,6 +18,3 @@ body {
   src: local("SourceCodePro-Regular"),
     url(./assets/fonts/web/SourceCodePro-Regular.ttf) format("truetype");
 }
-
-$primary-color: #e5e5e5;
-$secondary-color: #d6d4cc;

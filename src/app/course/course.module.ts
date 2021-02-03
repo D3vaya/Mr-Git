@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import { CoverPageComponent } from './components/cover-page/cover-page.component';
 import { TitleChapterComponent } from './components/title-chapter/title-chapter.component';
 import { ContentChapterComponent } from './components/content-chapter/content-chapter.component';
+import { HighlightModule } from 'ngx-highlightjs';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,6 @@ import { ContentChapterComponent } from './components/content-chapter/content-ch
     TitleChapterComponent,
     ContentChapterComponent,
   ],
-  imports: [CommonModule, CourseRoutingModule, SharedModule],
+  imports: [CommonModule, CourseRoutingModule, SharedModule, HighlightModule],
 })
 export class CourseModule {}
