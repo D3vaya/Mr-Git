@@ -1,5 +1,5 @@
 body {
-  font-family: "Source code Pro";
+  font-family: "Source Code Pro", sans-serif, Helvetica;
   background-image: url("./assets/img/bg/body.jpeg");
   background-repeat: repeat;
 }
@@ -16,4 +16,9 @@ body {
   font-family: "Potta One";
   src: local("Potta One"),
     url(./assets/fonts/brand/PottaOne-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Source Code Pro";
+  src: local("SourceCodePro-Regular"),
+    url(./assets/fonts/web/SourceCodePro-Regular.ttf) format("truetype");
 }
