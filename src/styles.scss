@@ -3,9 +3,15 @@ $secondary-color: #d6d4cc;
 @import "~highlight.js/styles/monokai-sublime.css";
 body {
   font-family: "Source Code Pro", sans-serif, Helvetica;
-  // background-image: url("./assets/img/bg/body.jpeg");
-  // background-repeat: repeat;
-  background-color: $primary-color;
+  background-color: $primary-color !important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 @font-face {
@@ -17,4 +23,15 @@ body {
   font-family: "Source Code Pro";
   src: local("SourceCodePro-Regular"),
     url(./assets/fonts/web/SourceCodePro-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+    url(./assets/fonts/web/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: local("Roboto-Light"),
+    url(./assets/fonts/web/Roboto-Light.ttf) format("truetype");
 }
