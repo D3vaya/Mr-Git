@@ -1,5 +1,8 @@
 <app-title-chapter [params]="params"></app-title-chapter>
-<h1>hola</h1>
-<pre>
-  <code [highlight]="code"  [languages]="['shell']" ></code>
-</pre>
+<h1>Contenido statico</h1>
+<markdown
+  lineHighlight
+  [src]="'assets/static/git.md'"
+  (load)="onLoad($event)"
+  (error)="onError($event)"
+></markdown>

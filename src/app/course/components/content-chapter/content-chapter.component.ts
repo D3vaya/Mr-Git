@@ -13,6 +13,7 @@ export class ContentChapterComponent implements OnInit {
   };
   response: HighlightResult;
   code = `git clone https://github/D3vaya`;
+
   constructor(private activeRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
@@ -57,5 +58,11 @@ export class ContentChapterComponent implements OnInit {
       default:
         return 'git.svg';
     }
+  }
+  onLoad(even) {
+    console.log(even);
+  }
+  onError(even) {
+    console.log(even);
   }
 }

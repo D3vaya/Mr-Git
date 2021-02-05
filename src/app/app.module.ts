@@ -11,10 +11,23 @@ import {
   HighlightOptions,
   HIGHLIGHT_OPTIONS,
 } from 'ngx-highlightjs';
+import { MarkdownModule } from 'ngx-markdown';
+import { SecurityContext } from '@angular/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, PublicLayoutComponent, CoursesLayoutComponent],
-  imports: [BrowserModule, SharedModule, AppRoutingModule, HighlightModule],
+  imports: [
+    BrowserModule,
+    SharedModule,
+    AppRoutingModule,
+    HighlightModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({
+      sanitize: SecurityContext.NONE,
+      loader: HttpClient,
+    }),
+  ],
   providers: [
     {
       provide: HIGHLIGHT_OPTIONS,
