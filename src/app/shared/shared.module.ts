@@ -9,7 +9,7 @@ import { NavCoursesComponent } from './components/nav-courses/nav-courses.compon
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { CodeComponent } from './code/code.component';
+import { CodeComponent } from './components/code/code.component';
 
 @NgModule({
   declarations: [

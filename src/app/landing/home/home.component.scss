@@ -47,8 +47,21 @@ main {
   width: 240px;
 }
 .footer-wave {
-  position: fixed;
   width: 100vw;
-
   bottom: 0;
+}
+
+.merge-bg {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  height: 85%;
+  z-index: 10;
+}
+.merge-bg-2 {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  height: 85%;
+  z-index: 10;
 }

@@ -7,7 +7,7 @@ import { Link } from '../../../core/models/link.model';
   styleUrls: ['./nav-courses.component.scss'],
 })
 export class NavCoursesComponent implements OnInit {
-  chapters: Array<Link>;
+  chapters: Link[];
   constructor(private coursesService: CoursesService) {}
 
   ngOnInit(): void {
