@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, UrlSegment } from '@angular/router';
-
+import { HighlightResult } from 'ngx-highlightjs';
 @Component({
   selector: 'app-content-chapter',
   templateUrl: './content-chapter.component.html',
@@ -11,17 +11,22 @@ export class ContentChapterComponent implements OnInit {
     title: '',
     image: '',
   };
-  code = `git  [--version] [--help] [-C <path>] [-c <name>=<value>]
-    [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-    [-p|--paginate|-P|--no-pager] [--no-replace-objects] [--bare]
-    [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-    [--super-prefix=<path>]
-    <command> [<args>]
-  `;
+  response: HighlightResult;
+
   constructor(private activeRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.captureRoute();
+  }
+
+  onHighlight(e) {
+    this.response = {
+      language: e.language,
+      relevance: e.relevance,
+      second_best: '{...}',
+      top: '{...}',
+      value: '{...}',
+    };
   }
 
   captureRoute() {
@@ -31,6 +36,9 @@ export class ContentChapterComponent implements OnInit {
     console.log(this.params.title, segment.tag);
   }
 
+  /**
+   * @description esta asquerosidad debo cambiarla, es solo momentanea
+   */
   setImage(segment: string) {
     switch (segment) {
       case 'git':
@@ -52,5 +60,11 @@ export class ContentChapterComponent implements OnInit {
       default:
         return 'git.svg';
     }
+  }
+  onLoad(even) {
+    console.log(even);
+  }
+  onError(even) {
+    console.log(even);
   }
 }
