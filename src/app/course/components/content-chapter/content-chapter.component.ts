@@ -12,7 +12,6 @@ export class ContentChapterComponent implements OnInit {
     image: '',
   };
   response: HighlightResult;
-  code = `git clone https://github/D3vaya`;
 
   constructor(private activeRoute: ActivatedRoute) {}
 
@@ -37,6 +36,9 @@ export class ContentChapterComponent implements OnInit {
     console.log(this.params.title, segment.tag);
   }
 
+  /**
+   * @description esta asquerosidad debo cambiarla, es solo momentanea
+   */
   setImage(segment: string) {
     switch (segment) {
       case 'git':
