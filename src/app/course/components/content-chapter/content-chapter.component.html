@@ -1,8 +1,13 @@
 <app-title-chapter [params]="params"></app-title-chapter>
-<h1>Contenido statico</h1>
 <markdown
   lineHighlight
-  [src]="'assets/static/git.md'"
+  emoji
+  [src]="currentPath"
   (load)="onLoad($event)"
   (error)="onError($event)"
 ></markdown>
+<a
+  routerLink="/courses/config/{{ currentPath }}"
+  class="btn btn-lg justify-content-end mb-3 btnNext shadow"
+  >Siguiente</a
+>

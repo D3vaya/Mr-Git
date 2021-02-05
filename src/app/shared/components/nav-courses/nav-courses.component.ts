@@ -8,6 +8,7 @@ import { Link } from '../../../core/models/link.model';
 })
 export class NavCoursesComponent implements OnInit {
   chapters: Link[];
+  menuVisible = '';
   constructor(private coursesService: CoursesService) {}
 
   ngOnInit(): void {
@@ -16,5 +17,9 @@ export class NavCoursesComponent implements OnInit {
 
   initChapters() {
     this.chapters = this.coursesService.getChapters();
+  }
+  setClassResponsive(event) {
+    this.menuVisible = 'show';
+    console.log(event);
   }
 }

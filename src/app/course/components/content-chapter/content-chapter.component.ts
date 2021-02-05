@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, UrlSegment } from '@angular/router';
+import { Event, Router, NavigationEnd } from '@angular/router';
 import { HighlightResult } from 'ngx-highlightjs';
+import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-content-chapter',
   templateUrl: './content-chapter.component.html',
@@ -12,11 +14,27 @@ export class ContentChapterComponent implements OnInit {
     image: '',
   };
   response: HighlightResult;
+  currentPath = '';
 
-  constructor(private activeRoute: ActivatedRoute) {}
+  constructor(location: Location, router: Router) {
+    router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        this.currentPath = this.buildFullRoute(location);
+      }
+    });
+  }
 
-  ngOnInit(): void {
-    this.captureRoute();
+  ngOnInit(): void {}
+
+  /**
+   * @description falta regularizar con expresiones regulares
+   */
+  buildFullRoute(location: Location): string {
+    const arrayPath = location.path(true).split('/');
+    const staticFolder = 'assets/static/site-' + arrayPath[2];
+    const path = arrayPath[3];
+    this.captureRoute(arrayPath);
+    return staticFolder + '/' + path + '.md';
   }
 
   onHighlight(e) {
@@ -29,11 +47,9 @@ export class ContentChapterComponent implements OnInit {
     };
   }
 
-  captureRoute() {
-    this.params.title = this.activeRoute.snapshot.params.tag;
-    const segment: any = this.activeRoute.snapshot.params;
-    this.params.image = this.setImage(segment.tag);
-    console.log(this.params.title, segment.tag);
+  captureRoute(arrayPath) {
+    this.params.title = arrayPath[3];
+    this.params.image = this.setImage(arrayPath[2]);
   }
 
   /**
@@ -62,9 +78,9 @@ export class ContentChapterComponent implements OnInit {
     }
   }
   onLoad(even) {
-    console.log(even);
+    //console.log(even);
   }
   onError(even) {
-    console.log(even);
+    //console.log(even);
   }
 }
