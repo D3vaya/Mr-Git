@@ -2,11 +2,13 @@
 
 El comando **git config** nos ayuda como su nombre dice, a establecer la configuración especifica del usuario, como el email, el correo de contacto, el nombre de usuario y su formato a mostrar en los cambios que dejen en el repositorio. **¿Estas pensando lo mismo que yo?** ... es la configuración que nos acusa cuando la cagamos 😂😂
 
+<div class="col-12 mb-4 mt-4">
 <center>
 <img src="assets/static/images/nervioso.svg" alt="logo git" height="100"/>
-<img src="assets/static/images/error.svg" alt="logo git" height="150"/>
+<img src="assets/static/images/error.svg" alt="logo git" height="100"/>
 <img src="assets/static/images/caca.svg" alt="logo git" height="100"/>
 </center>
+</div>
 
 ## <img src="assets/static/images/terminal.svg" alt="logo git" height="40"/> **Veamoslo en acción**
 

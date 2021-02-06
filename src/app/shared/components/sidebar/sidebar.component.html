@@ -1,4 +1,9 @@
-<div class="mt-5 sidebar show collapse" id="sidebarMenu">
+<!-- class="mt-5 sidebar d-lg-block col show position-sticky pt-3 collapse" -->
+<div
+  [ngStyle]="{ display: classSidebar }"
+  class="sidebar d-lg-block show collapse"
+  id="sidebarMenu"
+>
   <div class="col-md-12">
     <ul class="menu">
       <app-link *ngFor="let params of chapters" [params]="params"> </app-link>

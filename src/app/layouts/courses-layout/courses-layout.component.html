@@ -1,10 +1,10 @@
-<app-nav-courses></app-nav-courses>
+<app-nav-courses (showSidebar)="showSidebar($event)"></app-nav-courses>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-12 col-lg-2 col-xs-8">
       <app-sidebar></app-sidebar>
     </div>
-    <div class="col-md-10">
+    <div class="col">
       <div class="container mt-5">
         <router-outlet></router-outlet>
       </div>

@@ -10,22 +10,25 @@ Git es un sistema de control de versiones. Ya ... pero que 🤬 es eso ??. Un si
 
 Mejor hagamos un retroceso en la historia del **versionamiento** de codigo. Era por ahi en los años **19XX**, y lo normal que se veia en las empresas de desarrolo era manjear las versiones del codigo en distintas carpetas. Si ... distintas carpetas con diferente nombre 🥲🥲. ¿Y cual era el principal problema?
 
-<center>
-<img src="assets/static/images/carpeta.svg" class="mb-4" loading="lazy" alt="logo git" height="100"/>
-<sub>versión final</sub>
+<div class="col-sm-12 col-md-12 ">
+<img src="assets/static/images/carpeta.svg" class="mb-4" loading="lazy" alt="logo git" height="100"/> 
+<sub class="">versión final</sub>
+
 <img src="assets/static/images/carpeta.svg" class="mb-4" loading="lazy" alt="logo git" height="100"/>
 <sub>versión final final</sub>
 <img src="assets/static/images/carpeta.svg" class="mb-4" loading="lazy" alt="logo git" height="100"/>
 <sub>versión final final ahora si !</sub>
-</center>
+</div>
 
 ¿Entiendes todo lo que sufrieron en esos años?. Pero gracias a **Linus Torvalds** este sufrimiento ya no existe. ¿Te sono familiar **Linus Torvalds**?. Si la respuesta es si, es dado que es el mismo creador del kernel de **linux**. Si, el mismo sistema operativo que usa un gran porcentaje de los desarrolladores del mundo y tambien es la tecnologia que soporta todas las aplicaciones que usas dia a dia.
 
 # <center> Gracias tio Linus 😎</center>
 
+<div class="col-12">
 <center>
-<img src="assets/static/images/tio_linus.jpeg" class="mb-4 mt-4" loading="lazy" alt="logo git" height="250"/>
+<img src="assets/static/images/tio_linus.jpeg" class="mb-4 mt-4" loading="lazy" alt="logo git" style="width:100%" />
 </center>
+</div>
 
 **`Importante veremos comandos de git que aún no sabras que hacen, pero no te preocupes, recuerda que esta es una introducción para que entiendas superficialmente en que nos puede ayudar git en nuestro dia a dia`**
 
