@@ -1,82 +1,106 @@
-## Que es <img src="assets/img/bg/git-logo.svg" alt="logo git" height="30"/>
+## Que es <img src="assets/img/bg/git-logo.svg" loading="lazy" alt="logo git" height="30"/>
 
-Git es un sistema de control de revisión distribuido, rápido y escalable con un conjunto de comandos inusualmente rico que proporciona tanto operaciones de alto nivel como acceso completo a los componentes internos.
-
-Consulte gittutorial [7] para comenzar, luego consulte giteveryday [7] para obtener un conjunto mínimo de comandos útiles. El Manual del usuario de Git tiene una introducción más detallada.
-
-Después de dominar los conceptos básicos, puede volver a esta página para aprender qué comandos ofrece Git. Puede obtener más información sobre los comandos individuales de Git con "git help command". La página de manual de gitcli [7] le brinda una descripción general de la sintaxis de comandos de la línea de comandos.
+Git es un sistema de control de versiones. Ya ... pero que 🤬 es eso ??. Un sistema de control de versiones nos permite poder controlar constantemente los cambios que realizamos en nuestros archivos de codigo. Cada palabra, espacio o **</>** que abres o cierras, git lo guarda con el fin de poder llevar un control de lo que hacemos a diario en nuestro trabajo.
 
 <center>
-<img src="assets/static/images/supervision.svg" alt="logo git" height="150"/>
+<img src="assets/static/images/pensando.svg" class="mb-4" loading="lazy" alt="logo git" height="150"/>  
 </center>
 
-## El comando <img src="assets/img/bg/git-logo.svg" alt="logo git" height="40"/>
+##### **<center>¿Aún no te queda claro?</center>**
 
-el comando `git` es el punto de entrada para comenzar a trabajar con esta tecnologia, y este nos entrega una gran cantidad de opciones muy utiles que estaremos viendo.
+Mejor hagamos un retroceso en la historia del **versionamiento** de codigo. Era por ahi en los años **19XX**, y lo normal que se veia en las empresas de desarrolo era manjear las versiones del codigo en distintas carpetas. Si ... distintas carpetas con diferente nombre 🥲🥲. ¿Y cual era el principal problema?
 
-```shell
-git [--version] [--help] [-C <ruta>] [-c <nombre> = <valor>]
-    [--exec-path [= <path>]] [--html-path] [--man-path] [--info-path]
-    [-p | --paginate | -P | --no-pager] [--no-reemplazar-objetos] [--bare]
-    [--git-dir = <ruta>] [--work-tree = <ruta>] [--namespace = <nombre>]
-    [--super-prefix = <ruta>]
-    <comando> [<args>]
+<center>
+<img src="assets/static/images/carpeta.svg" class="mb-4" loading="lazy" alt="logo git" height="100"/>
+<sub>versión final</sub>
+<img src="assets/static/images/carpeta.svg" class="mb-4" loading="lazy" alt="logo git" height="100"/>
+<sub>versión final final</sub>
+<img src="assets/static/images/carpeta.svg" class="mb-4" loading="lazy" alt="logo git" height="100"/>
+<sub>versión final final ahora si !</sub>
+</center>
+
+¿Entiendes todo lo que sufrieron en esos años?. Pero gracias a **Linus Torvalds** este sufrimiento ya no existe. ¿Te sono familiar **Linus Torvalds**?. Si la respuesta es si, es dado que es el mismo creador del kernel de **linux**. Si, el mismo sistema operativo que usa un gran porcentaje de los desarrolladores del mundo y tambien es la tecnologia que soporta todas las aplicaciones que usas dia a dia.
+
+# <center> Gracias tio Linus 😎</center>
+
+<center>
+<img src="assets/static/images/tio_linus.jpeg" class="mb-4 mt-4" loading="lazy" alt="logo git" height="250"/>
+</center>
+
+**`Importante veremos comandos de git que aún no sabras que hacen, pero no te preocupes, recuerda que esta es una introducción para que entiendas superficialmente en que nos puede ayudar git en nuestro dia a dia`**
+
+Dicho esto, continuemos. Entonces y, para dejarlo mas claro, te explicare con detalle y de forma amigable como trabaja git y como nos ayuda en nuestro dia a dia como desarrolladores de software.
+Imagina que estas desarrollando el sitio web de tu portafolio y como es logico, comienzas con la semantica **html** de tu sitio, por lo cual partes creando tu **index.html** y agregas ahí la estructura de tu portafolio web
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mi Portafolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Bienvenidos a mi espectacular portafolio</h1>
+        <div class="container-emoji">
+          <h3>Hola Soy Pepito 😘</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 ```
 
-# <img src="assets/static/images/opciones.svg" alt="logo git" height="70"/> Opciones
+<center>
+<img src="assets/static/images/captura-portafolio.png" class="mb-4 mt-4" loading="lazy" alt="captura web" height="114"/>
+</center>
 
-veremos comandos como --version y --help que nos ayudaran cuando andamos super perdidos <img src="assets/static/images/perdio.svg" alt="logo git" height="50"/>
+Automaticamente git guarda los cambios de tu archivo html y te informa que puedes confirmar dichos cambios para genera un punto en el tiempo. A eso en el mundo de **git** se le llama **commit**. Tranquilo... ya llegaremos a ese punto(😘), pero si eres un pro del versionamiento y solo necesitas refrescar tu memoria, puedes ir directamente a la sección **Menu > Comandos básicos > Commit**.
+Entonces, una vez hayamos confirmado el cambio(**commit**) se generará un punto en el tiempo en el código de nuestro proyecto, y asi susesivamente con cada cambio y confirmación que realicemos.
 
-#### <img src="assets/static/images/terminal.svg" alt="logo git" height="50"/> --version
+<center>
+<img src="assets/static/images/commit-ejemplo.svg" class="mb-4 mt-4" loading="lazy" alt="captura web" height="214"/>
+</center>
 
-imprime la versión actual de **Git** que tienes instalada en tu pc.
+Ahora, si dejamos nuestro portafolio asi, claramente no seremos considerado como **Pro FrontEnd**. Apliquemos un poco de estilo a nuestro portafolio creando nuestro archivo de css **style.css**
 
-```shell
-git --version
-
-git version 2.29.0
+```css
+body {
+  background-color: antiquewhite;
+}
+.container {
+  padding: 1em;
+  align-items: center;
+}
+.container h1 {
+  color: deeppink;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
 ```
 
-#### <img src="assets/static/images/boya-salvavidas.svg" alt="logo git" height="50"/> --help
+Agregamos la referencia de nuestro **style.css** a nuestro archivo **index.html** y vemos que ha mejorado a tal nivel que nos lloveran las ofertas para startups de silicon valley.
 
-imprime el detalle del comando y una lista de opciones(**comandos**) normalmente utilizados.
+<center>
+<img src="assets/static/images/mentiroso.svg" class="mt-1" alt="logo git" height="100"/>
+</center>
 
-```shell
-git --help
-
-- Estos son comandos comunes de Git usados en varias situaciones:
-
-- comienza un area de trabajo (ver tambien: git help tutorial)
-  - clone             Clona un repositorio dentro de un nuevo directorio
-  - init              Crea un repositorio de Git vacio o reinicia el que ya existe
-
-- trabaja en los cambios actuales (ver tambien: git help everyday)
-  - add               Agrega contenido de carpetas al indice
-  - mv                Mueve o cambia el nombre a archivos, directorios o enlaces simbolicos
-  - restore           Restaurar archivos de arboles de trabajo
-  - rm                Borra archivos del arbol de trabajo y del indice
-  - sparse-checkout   Inicializa y modifica el sparse-checkout
-
-- examina el historial y el estado (ver tambien: git help revisions)
-  - bisect            Use la busqueda binaria para encontrar el commit que introdujo el bug
-  - diff              Muestra los cambios entre commits, commit y arbol de trabajo, etc
-  - grep              Imprime las lineas que concuerdan con el patron
-  - log               Muestra los logs de los commits
-  - show              Muestra varios tipos de objetos
-  - status            Muestra el estado del arbol de trabajo
-
-- crece, marca y ajusta tu historial comun
-  - branch            Lista, crea, o borra ramas
-  - commit            Graba los cambios en tu repositorio
-  - merge             Junta dos o mas historiales de desarrollo juntos
-  - rebase            Vuelve a aplicar commits en la punta de otra rama
-  - reset             Reinicia el HEAD actual a un estado especifico
-  - switch            Cambiar branches
-  - tag               Crea, lista, borra o verifica un tag de objeto firmado con GPG
-
-- colabora (mira tambien: git help workflows)
-  - fetch             Descarga objetos y referencias de otro repositorio
-  - pull              Realiza un fetch e integra con otro repositorio o rama local
-  - push              Actualiza referencias remotas junto con sus objetos asociados
-
+```html
+<link rel="stylesheet" href="css/style.css" />
 ```
+
+<center>
+<img src="assets/static/images/portafolio-profesional.png" class="mt-1 mb-4" alt="logo git" height="153"/>
+</center>
+
+Aca es donde git aplica toda su magia, automaticamente detecta 2 cosas. La primera, es que sabe que creamos un archivo **style.css**, y la segunda es que detecta cambios en nuestro archivo **index.html**, esto debido a que anteriormente ya habiamos versionado nuestro archivo, por lo cual git esta monitoreando en todo momento cada archivo en nuestro repositorio.
+
+## <img src="assets/static/images/terminal.svg" class="mt-1" alt="logo git" height="40"/> git

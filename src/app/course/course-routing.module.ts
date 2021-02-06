@@ -10,6 +10,11 @@ const routes: Routes = [
     component: ChapterContainerComponent,
     children: CHAPTERS_ROUTES,
   },
+  {
+    path: 'commands/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
 ];
 
 @NgModule({

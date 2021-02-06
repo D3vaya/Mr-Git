@@ -37,6 +37,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
         lineNumbersLoader: () => import('highlightjs-line-numbers.js'), // Optional, only if you want the line numbers
         languages: {
           shell: () => import('highlight.js/lib/languages/shell'),
+          css: () => import('highlight.js/lib/languages/css'),
         },
       },
     },

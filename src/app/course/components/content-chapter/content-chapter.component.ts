@@ -58,7 +58,7 @@ export class ContentChapterComponent implements OnInit {
   }
 
   onLoad(event) {
-    console.log(event);
+    // console.log(event);
     this.showNotFound = false;
   }
   onError(event: HttpErrorResponse) {
