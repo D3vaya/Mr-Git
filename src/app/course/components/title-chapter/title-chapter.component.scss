@@ -1,9 +1,10 @@
 .Title {
   display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: start;
+
   h1 {
     margin-left: 10px;
     font-weight: bold;
+    font-size: 3em;
   }
 }

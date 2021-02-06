@@ -1,13 +1,21 @@
-<app-title-chapter [params]="params"></app-title-chapter>
-<markdown
-  lineHighlight
-  emoji
-  [src]="currentPath"
-  (load)="onLoad($event)"
-  (error)="onError($event)"
-></markdown>
-<a
-  routerLink="/courses/config/{{ currentPath }}"
-  class="btn btn-lg justify-content-end mb-3 btnNext shadow"
-  >Siguiente</a
->
+<div class="row">
+  <div class="col-12 mt-4 border-bottom">
+    <app-title-chapter [params]="params"></app-title-chapter>
+  </div>
+  <div class="col-12 mt-4">
+    <markdown
+      *ngIf="!showNotFound"
+      lineHighlight
+      emoji
+      [src]="currentPath"
+      (load)="onLoad($event)"
+      (error)="onError($event)"
+    ></markdown>
+    <a
+      routerLink="/courses/config/{{ currentPath }}"
+      class="btn btn-lg justify-content-end mb-3 btnNext shadow"
+      >Siguiente</a
+    >
+    <app-chapter-not-found *ngIf="showNotFound"></app-chapter-not-found>
+  </div>
+</div>

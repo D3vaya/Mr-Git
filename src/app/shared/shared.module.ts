@@ -10,6 +10,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CodeComponent } from './components/code/code.component';
+import { MarkdownModule } from 'ngx-markdown';
+import { ChapterNotFoundComponent } from './chapter-not-found/chapter-not-found.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { CodeComponent } from './components/code/code.component';
     BrandComponent,
     PageNotFoundComponent,
     CodeComponent,
+    ChapterNotFoundComponent,
   ],
   exports: [
     HeaderComponent,
@@ -31,7 +34,8 @@ import { CodeComponent } from './components/code/code.component';
     BrandComponent,
     PageNotFoundComponent,
     CodeComponent,
+    ChapterNotFoundComponent,
   ],
-  imports: [CommonModule, SharedRoutingModule],
+  imports: [CommonModule, SharedRoutingModule, MarkdownModule.forChild()],
 })
 export class SharedModule {}
