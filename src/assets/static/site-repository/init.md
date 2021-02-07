@@ -1,6 +1,6 @@
 ## <img src="assets/static/images/lanzamiento.svg" alt="lanzamiento de cohete" height="50"/> **git init**
 
-Este comando suele ser el primero que una ejecuta al comenzar a trbaajr y es el punta pie inicial en este juego. Git init crea un repositorio vacio de nuestro codigo para que podamos comenzar a crear nuestra idea billonaria 🤑. Lo que ocurre internamente es que se crea un directorio en nuestra carpeta de trabajo llamada .git/. En esta se encuentra todos los metadatos con los que trabaja esta git.
+Este comando suele ser el primero que una ejecuta al comenzar a trabajar y es el puntapie inicial en este juego. Git init crea un repositorio vacio de nuestro codigo para que podamos comenzar a crear nuestra idea billonaria 🤑. Lo que ocurre internamente son dos cosas: primero, se crea la carpeta .git/, donde se guardara toda la base de datos con los cambios atomicos de nuestro proyecto; y segundo, crea un área que conocemos como **Staging**, que guardara temporalmente nuestros archivos (**"cuando ejecutemos git add" spoiler alert🙊🙊** ) y nos permitirá, mas adelante , guardar estos cambios en el repositorio.
 
 Solo basta con escribir el comando.
 

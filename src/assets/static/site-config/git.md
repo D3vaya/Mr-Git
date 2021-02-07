@@ -37,4 +37,4 @@ Entendiendo que cuando escribi este sitio era febrero del 2021, los videojuegos 
 <img src="assets/static/images/slot.jpg" height="200" class="mb-2 mt-2" loading="lazy" alt="videojuego" />
 </center>
 
-Ya que tienes una idea de lo que es git y el control de versiones, desde esta linea en adelante nos introduciremos tecnicamente en esta maravillosa tecnologia
+Ya que tienes una idea de lo que es git y el control de versiones, desde esta linea en adelante nos introduciremos tecnicamente en esta maravillosa tecnologia.
