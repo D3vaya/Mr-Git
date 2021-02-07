@@ -1,4 +1,4 @@
-## <img src="assets/static/images/disco-duro.svg" alt="lanzamiento de cohete" height="50"/> **git clone**
+## <img src="assets/static/images/disco-duro.svg" alt="disco-duro" height="50"/> **git clone**
 
 Git clone como lo hablamos en el capitulo anterior, es muy pareceido a **git init**. Pero la gran diferencia entre estos comandos es que git init crea un repositorio nuevo y vacio para comenzar a trabajar, y el otro(**git clone**) genera una copia de un repositorio ya existente para trabajar desde una base.
 
@@ -7,7 +7,7 @@ Git clone como lo hablamos en el capitulo anterior, es muy pareceido a **git ini
 <img class="mb-3" src="assets/static/images/nina-clone.svg" alt="nina color" height="100" />
 </center>
 
-## <div class="mt-4 mb-3"> <img src="assets/static/images/lanzamiento.svg" alt="lanzamiento de cohete" height="50" /> **Analicemos git clone**</div>
+## <div class="mt-4 mb-3"> <img src="assets/static/images/disco-duro.svg" alt="disco-duro" height="50" /> **Analicemos git clone**</div>
 
 Normalmente utilizamos git clone para apuntar a repositorios remotos(**🙊spoiler alert🙊**), y la forma de usarlo es bastante sencilla, veamos el ejemplo del repositorio de <a href="https://github.com/D3vaya/Mr-Git" target="_blank"><img src="assets/img/landing/logo.svg" alt="lanzamiento de cohete" height="20" /></a> que es de codigo abierto y esta disponible para cualquier persona que tenga una cuenta en github.
 
@@ -32,27 +32,35 @@ $ git clone -branch markdown https://github.com/D3vaya/Mr-Git.git
 
 ```
 
-Este ejemplo solo clonaria la rama **"markdown"** del repositorio de <a href="https://github.com/D3vaya/Mr-Git" target="_blank"><img src="assets/img/landing/logo.svg" alt="lanzamiento de cohete" height="20" /></a>. Se trata simplemente de una utilidad práctica que te ahorra el tiempo de descargar la referencia de **HEAD**(**🙊spoiler alert🙊**) del repositorio y, después, el tener que recuperar también la referencia que necesitas.
+Este ejemplo solo clonaria la rama **"markdown"** del repositorio de <a href="https://github.com/D3vaya/Mr-Git" target="_blank"><img src="assets/img/landing/logo.svg" alt="mr git" height="20" /></a>. Se trata simplemente de una utilidad práctica que te ahorra el tiempo de descargar la referencia de **HEAD**(**🙊spoiler alert🙊**) del repositorio y, después, el tener que recuperar también la referencia que necesitas.
 
-## <div class="mt-4 mb-3"> <img src="assets/static/images/lanzamiento.svg" alt="lanzamiento de cohete" height="50" /> **Url de Git**</div>
+## <div class="mt-4 mb-3"> <img src="assets/static/images/disco-duro.svg" alt="disco-duro" height="50" /> **Url de Git**</div>
 
 Git maneja sus propias sintaxis de **URL**, que son las que usamos para los repositorios remotos, te dejare las 3 que usa git para lo que te comento
 
-- **SSH**
-  > Secure Shell (SSH) es un extendido protocolo de red autenticada que se configura habitualmente de manera predeterminada en la mayoría de los servidores. Como SSH es un protocolo autenticado, tendrás que establecer credenciales con el servidor de alojamiento antes de conectarte. ssh://[user@]host.xz[:port]/path/to/repo.git/
-  ```bash
-  $ git@github.com:D3vaya/Mr-Git.git
-  ```
-- **GIT**
-  > Un protocolo único de Git. Git incluye un daemon que se ejecuta en el puerto (9418). El protocolo es similar a SSH. Sin embargo, NO tiene autenticación. git://host.xz[:port]/path/to/repo.git/
-  ```bash
-  $ gh repo clone D3vaya/Mr-Git
-  ```
-- HTTP
-  > Protocolo de transferencia de hipertexto. El protocolo de la web, utilizado habitualmente para transferir datos HTML de páginas web por Internet. Git se puede configurar para comunicarse por HTTP http[s]://host.xz[:port]/path/to/repo.git/
-  ```bash
-  $ https://github.com/D3vaya/Mr-Git.git
-  ```
+#### **SSH**
+
+> Secure Shell (SSH) es un extendido protocolo de red autenticada que se configura habitualmente de manera predeterminada en la mayoría de los servidores. Como SSH es un protocolo autenticado, tendrás que establecer credenciales con el servidor de alojamiento antes de conectarte. **ssh://[user@]host.xz[:port]/path/to/repo.git/**
+
+```bash
+$ git@github.com:D3vaya/Mr-Git.git
+```
+
+#### **GIT**
+
+> Un protocolo único de Git. Git incluye un daemon que se ejecuta en el puerto (**9418**). El protocolo es similar a SSH. Sin embargo, NO tiene autenticación. **git://host.xz[:port]/path/to/repo.git/**
+
+```bash
+$ gh repo clone D3vaya/Mr-Git
+```
+
+#### HTTP
+
+> Protocolo de transferencia de hipertexto. El protocolo de la web, utilizado habitualmente para transferir datos HTML de páginas web por Internet. Git se puede configurar para comunicarse por HTTP **http[s]://host.xz[:port]/path/to/repo.git/**
+
+```bash
+$ https://github.com/D3vaya/Mr-Git.git
+```
 
 <center>
 <img class="mb-3 mt-3" src="assets/static/images/proteger.svg" alt="escudo de seguridad" height="100" />
