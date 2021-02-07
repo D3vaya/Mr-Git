@@ -40,4 +40,4 @@ $ git commit
 <img class="mb-3" src="assets/static/images/feliz.svg" alt="lanzamiento de cohete" height="100" />
 </center>
 
-Como pudiste ver, git init es un comando sencillo y muy facil de entender. En el siguiente capitulo entenderemos su hermano mellizo, **git clone**.
+Como pudiste ver, git init es un comando sencillo y muy facil de entender. En el siguiente capitulo analizaremos a su hermano mellizo, **git clone**.

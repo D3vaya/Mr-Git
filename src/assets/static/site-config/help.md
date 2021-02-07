@@ -55,8 +55,7 @@ Estos comandos son muy útiles por que puedes acceder a ellos en cualquier parte
 ```
 
 <center>
-<img src="assets/static/images/boya-salvavidas.svg" alt="boya salvavidas" height="100" class="mb-2"/>
-
-#### Recuerda, todos necesitamos un salvavidas en algun momento.
-
+<img src="assets/static/images/boya-salvavidas.svg" alt="boya salvavidas" height="100" class="mb-3 mt-3"/>
 </center>
+
+Con **git help** nos dimos cuenta que nunca estaremos solos. En el proximo capitulo veremos como reportar bugs en git con el comando **gugreport**.

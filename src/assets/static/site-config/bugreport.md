@@ -31,7 +31,6 @@ versión de git:
 
 <center>
 <img src="assets/static/images/bug.svg" alt="boya salvavidas" height="100" class="mb-2"/>
-
-#### Un comando poco usado, pero que siempre tenemos que tener en cuenta.
-
 </center>
+
+Un comando poco usado pero que siempre debemos tener en cuenta ante cualquier problema. En la siguiente sección veremos como iniciar nuestros repositorios.
