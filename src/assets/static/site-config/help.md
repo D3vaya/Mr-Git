@@ -1,75 +1,62 @@
-Dicho esto, continuemos. Entonces y, para dejarlo mas claro, te explicare con detalle y de forma amigable como trabaja git y como nos ayuda en nuestro dia a dia como desarrolladores de software.
-Imagina que estas desarrollando el sitio web de tu portafolio y como es logico, comienzas con la semantica **html** de tu sitio, por lo cual partes creando tu **index.html** y agregas ahí la estructura de tu portafolio web
+## <img src="assets/static/images/boya-salvavidas.svg" alt="logo git" height="40"/> **git help**
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Mi Portafolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="card">
-        <h1>Bienvenidos a mi espectacular portafolio</h1>
-        <div class="container-emoji">
-          <h3>Hola Soy Pepito 😘</h3>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+Si te sientes perdido o necesitas ayuda en algun momento, existen 3 formas de poder encontrarla:
+
+```bash
+$ git help <verb>
+$ git <verb> --help
+$ man git-<verb>
+```
+
+Estos comandos son muy útiles por que puedes acceder a ellos en cualquier parte del sitio y sin conexión. Para que te hagas una idea de lo que puede hacer el comando **help** por ti, te dejo un ejemplo de la información que entrega
+
+```bash
+- uso: git [--version] [--help] [-C <ruta>] [-c <nombre>=<valor>]
+           [--exec-path[=<ruta>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<ruta>] [--work-tree=<ruta>] [--namespace=<nombre>]
+           <comando> [<args>]
+
+- Estos son comandos comunes de Git usados en varias situaciones:
+
+- comienza un 'area de trabajo (ver tambi'en: git help tutorial)
+  - clone             Clona un repositorio dentro de un nuevo directorio
+  - init              Crea un repositorio de Git vac'io o reinicia el que ya existe
+
+- trabaja en los cambios actuales (ver tambi'en: git help everyday)
+  - add               Agrega contenido de carpetas al 'indice
+  - mv                Mueve o cambia el nombre a archivos, directorios o enlaces simb'olicos
+  - restore           Restaurar archivos de 'arboles de trabajo
+  - rm                Borra archivos del 'arbol de trabajo y del 'indice
+  - sparse-checkout   Inicializa y modifica el sparse-checkout
+
+- examina el historial y el estado (ver tambi'en: git help revisions)
+  - bisect            Use la b'usqueda binaria para encontrar el commit que introdujo el bug
+  - diff              Muestra los cambios entre commits, commit y 'arbol de trabajo, etc
+  - grep              Imprime las l'ineas que concuerdan con el patron
+  - log               Muestra los logs de los commits
+  - show              Muestra varios tipos de objetos
+  - status            Muestra el estado del 'arbol de trabajo
+
+- crece, marca y ajusta tu historial com'un
+  - branch            Lista, crea, o borra ramas
+  - commit            Graba los cambios en tu repositorio
+  - merge             Junta dos o m'as historiales de desarrollo juntos
+  - rebase            Vuelve a aplicar commits en la punta de otra rama
+  - reset             Reinicia el HEAD actual a un estado especifico
+  - switch            Cambiar branches
+  - tag               Crea, lista, borra o verifica un tag de objeto firmado con GPG
+
+- colabora (mira tambi'en: git help workflows)
+  - fetch             Descarga objetos y referencias de otro repositorio
+  - pull              Realiza un fetch e integra con otro repositorio o rama local
+  - push              Actualiza referencias remotas junto con sus objetos asociados
+
 ```
 
 <center>
-<img src="assets/static/images/portafolio.svg" class="mb-4 mt-4" loading="lazy" alt="captura web" style="width:100%" height="214"/>
+<img src="assets/static/images/boya-salvavidas.svg" alt="boya salvavidas" height="100" class="mb-2"/>
+
+#### Recuerda, todos necesitamos un salvavidas en algun momento.
+
 </center>
-
-Automaticamente git guarda los cambios de tu archivo html y te informa que puedes confirmar dichos cambios para genera un punto en el tiempo. A eso en el mundo de **git** se le llama **commit**. Tranquilo... ya llegaremos a ese punto(😘), pero si eres un pro del versionamiento y solo necesitas refrescar tu memoria, puedes ir directamente a la sección **Menu > Comandos básicos > Commit**.
-Entonces, una vez hayamos confirmado el cambio(**commit**) se generará un punto en el tiempo en el código de nuestro proyecto, y asi susesivamente con cada cambio y confirmación que realicemos.
-
-<center>
-<img src="assets/static/images/commit-ejemplo.svg" class="mb-4 mt-4" loading="lazy" alt="captura web" style="width:100%" height="214"/>
-</center>
-
-Ahora, si dejamos nuestro portafolio asi, claramente no seremos considerado como **Pro FrontEnd**. Apliquemos un poco de estilo a nuestro portafolio creando nuestro archivo de css **style.css**
-
-```css
-body {
-  background-color: antiquewhite;
-}
-.container {
-  padding: 1em;
-  align-items: center;
-}
-.container h1 {
-  color: deeppink;
-}
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1em;
-  text-align: center;
-}
-```
-
-Agregamos la referencia de nuestro **style.css** a nuestro archivo **index.html** y vemos que ha mejorado a tal nivel que nos lloveran las ofertas para startups en silicon valley.
-
-<center>
-<img src="assets/static/images/mentiroso.svg" class="mt-1" alt="logo git" height="100"/>
-</center>
-
-```html
-<link rel="stylesheet" href="css/style.css" />
-```
-
-<center >
-<img src="assets/static/images/portafolio-profesional.svg" class="mt-1 mb-4" alt="logo git" style="width:100%" height="214"/>
-</center>
-
-Aca es donde git aplica toda su magia, automaticamente detecta 2 cosas. La primera, es que sabe que creamos un archivo **style.css**, y la segunda es que detecta cambios en nuestro archivo **index.html**, esto debido a que anteriormente ya habiamos versionado nuestro archivo, por lo cual git esta monitoreando en todo momento cada archivo en nuestro repositorio.
-
-## <img src="assets/static/images/terminal.svg" class="mt-1" alt="logo git" height="40"/> git

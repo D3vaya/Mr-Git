@@ -1,4 +1,4 @@
-## <img src="assets/static/images/terminal.svg" alt="logo git" height="40"/> **git config**
+## <img src="assets/static/images/configuracion.svg" alt="logo git" height="40"/> **git config**
 
 El comando **git config** nos ayuda como su nombre dice, a establecer la configuración especifica del usuario, como el email, el correo de contacto, el nombre de usuario y su formato a mostrar en los cambios(**commit**) que dejen en el repositorio. **¿Estas pensando lo mismo que yo?** ... es la configuración que nos acusa cuando la cagamos 🤡🤡.
 
@@ -10,7 +10,7 @@ El comando **git config** nos ayuda como su nombre dice, a establecer la configu
 </center>
 </div>
 
-## <img src="assets/static/images/terminal.svg" alt="logo git" height="40"/> **config en acción**
+## <img src="assets/static/images/configuracion.svg" alt="logo git" height="40"/> **config en acción**
 
 Te mostrare la forma de configurar nuestros datos de usario en la terminal, asi cuando hagamos/subamos nuestros cambios figuren tus datos(💀💀💀).
 
