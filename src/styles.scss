@@ -22,7 +22,7 @@ body {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
   .sidebar {
     display: none;
@@ -32,6 +32,9 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+  body {
+    font-size: 15px;
+  }
   .sidebar {
     display: none;
   }
@@ -40,6 +43,9 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+  body {
+    font-size: 15px;
+  }
   .sidebar {
     display: none;
   }
@@ -58,6 +64,9 @@ body {
 
 // custom
 @media only screen and (min-width: 540px) and (max-width: 992px) and (orientation: portrait) {
+  body {
+    font-size: 15px;
+  }
   .sidebar {
     display: none;
   }
