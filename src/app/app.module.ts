@@ -14,6 +14,8 @@ import {
 import { MarkdownModule } from 'ngx-markdown';
 import { SecurityContext } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent, PublicLayoutComponent, CoursesLayoutComponent],
@@ -27,6 +29,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       sanitize: SecurityContext.NONE,
       loader: HttpClient,
     }),
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
     {
