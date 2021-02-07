@@ -31,7 +31,7 @@ Retomando el presente(🦠🦠**2021**🦠🦠) y, entendiendo el sufrimiento de
 <img src="assets/static/images/gears-of-war.svg" height="100" class="mb-2 mt-2" loading="lazy" alt="videojuego" />
 </center>
 
-Entendiendo que cuando escribi este sitio era febrero del 2021, los videojuegos era lo mas requerido dado el encierro que nos generaba la plandemia mundial del **codid-19**. Y que mejor que poner el ejemplo de un videojuego. Cada vez que jugabamos red dead redeption 2, gears of war 5, the last of us o algun juego del momento, guardabamos nuestra partida. Si lo ves de otra forma, guardabamos una version de nuestra partida para no iniciar del principio y poder continuar donde habíamos quedado. Tambien podiamos volver a cualquier partida de guardada con anterioridad. Bueno... eso es git, eso es un software de control de versiones de codigo.
+Entendiendo que cuando escribi este sitio era febrero del 2021, los videojuegos era lo mas requerido dado el encierro que nos generaba la plandemia mundial del **codid-19**. Y que mejor que poner el ejemplo de un videojuego. Cada vez que jugabamos red dead redeption 2, gears of war 5, the last of us o algun juego del momento, guardabamos nuestra partida. Si lo ves de otra forma, guardabamos una version de nuestro juego para no iniciar del principio y poder continuar donde habíamos quedado. Tambien podiamos volver a cualquier partida de guardada con anterioridad. Bueno... eso es git, eso es un software de control de versiones de codigo.
 
 <center>
 <img src="assets/static/images/slot.jpg" height="200" class="mb-2 mt-2" loading="lazy" alt="videojuego" />
