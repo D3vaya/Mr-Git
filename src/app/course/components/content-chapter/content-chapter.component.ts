@@ -53,6 +53,7 @@ export class ContentChapterComponent implements OnInit {
   }
 
   captureRoute(arrayPath) {
+    console.log(arrayPath);
     this.params.title = arrayPath[3];
     this.params.image = arrayPath[2] + '.svg';
   }

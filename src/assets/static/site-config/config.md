@@ -55,4 +55,4 @@ Te dejo un regalalito 🎁, si no eres muy amigo de la terminal y te cargan las 
 $ git config --global core.editor emacs
 ```
 
-Con estos simples comandos, ya podemos comenzar a usar git 100%. Continua leyendo los siguientes capitulos de 🎩-git para comprender a fondo esta tecnologia.
+Con estos simples comandos, ya podemos comenzar a usar git 100%. En el siguiente capitulo podremos ver cómo tener ayuda con git en cualquier momento con **git help**.
