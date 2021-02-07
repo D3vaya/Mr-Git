@@ -3,14 +3,12 @@ export const chapters: Chapter[] = [
   {
     path: '/courses/config',
     icon: 'commons/config.svg',
-    class: 'text-dark',
     open: false,
     title: 'Config & Setup',
     subChapter: [
       {
         path: '/courses/config/git',
         icon: 'commons/config.svg',
-        class: 'text-dark',
         open: false,
         title: 'git',
         subChapter: [],
@@ -18,7 +16,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/config/config',
         icon: 'commons/config.svg',
-        class: 'text-dark',
         open: false,
         title: 'config',
         subChapter: [],
@@ -26,7 +23,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/config/help',
         icon: 'commons/config.svg',
-        class: 'text-dark',
         open: false,
         title: 'ayuda',
         subChapter: [],
@@ -34,7 +30,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/config/bugreport',
         icon: 'commons/config.svg',
-        class: 'text-dark',
         open: false,
         title: 'bugreport',
         subChapter: [],
@@ -44,14 +39,12 @@ export const chapters: Chapter[] = [
   {
     path: '/courses/repository',
     icon: 'commons/repository.svg',
-    class: 'text-dark',
     open: false,
     title: 'Creación repos',
     subChapter: [
       {
         path: '/courses/repository/init',
         icon: 'commons/repository.svg',
-        class: 'text-dark',
         open: false,
         title: 'init',
         subChapter: [],
@@ -59,7 +52,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/repository/clone',
         icon: 'commons/repository.svg',
-        class: 'text-dark',
         open: false,
         title: 'clone',
         subChapter: [],
@@ -69,14 +61,12 @@ export const chapters: Chapter[] = [
   {
     path: 'courses/commands',
     icon: 'commons/commands.svg',
-    class: 'text-dark',
     open: false,
     title: 'Comandos basicos',
     subChapter: [
       {
         path: '/courses/commands/add',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'add',
         subChapter: [],
@@ -84,7 +74,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/status',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'status',
         subChapter: [],
@@ -92,7 +81,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/diff',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'diff',
         subChapter: [],
@@ -100,7 +88,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/commit',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'commit',
         subChapter: [],
@@ -108,7 +95,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/notes',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'notes',
         subChapter: [],
@@ -116,7 +102,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/restore',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'restore',
         subChapter: [],
@@ -124,7 +109,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/resset',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'reset',
         subChapter: [],
@@ -132,7 +116,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/remove',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'rm',
         subChapter: [],
@@ -140,7 +123,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/commands/move',
         icon: 'commons/commands.svg',
-        class: 'text-dark',
         open: false,
         title: 'mv',
         subChapter: [],
@@ -150,14 +132,12 @@ export const chapters: Chapter[] = [
   {
     path: '/courses/branch-merge',
     icon: 'commons/branch-merge.svg',
-    class: 'text-dark',
     open: false,
     title: 'Ramas y Merge',
     subChapter: [
       {
         path: '/courses/branch-merge/branch',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'branch',
         subChapter: [],
@@ -165,7 +145,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/checkout',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'checkout',
         subChapter: [],
@@ -173,7 +152,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/switch',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'switch',
         subChapter: [],
@@ -181,7 +159,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/merge',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'merge',
         subChapter: [],
@@ -189,7 +166,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/tool',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'merge tool',
         subChapter: [],
@@ -197,7 +173,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/log',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'log',
         subChapter: [],
@@ -205,7 +180,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/stach',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'stach',
         subChapter: [],
@@ -213,7 +187,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/tag',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'tag',
         subChapter: [],
@@ -221,7 +194,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/branch-merge/worktree',
         icon: 'commons/branch-merge.svg',
-        class: 'text-dark',
         open: false,
         title: 'worktree',
         subChapter: [],
@@ -231,14 +203,12 @@ export const chapters: Chapter[] = [
   {
     path: '/courses/remote',
     icon: 'commons/remote.svg',
-    class: 'text-dark',
     open: false,
     title: 'Remote Branches',
     subChapter: [
       {
         path: '/courses/remote/fetch',
         icon: 'commons/remote.svg',
-        class: 'text-dark',
         open: false,
         title: 'fetch',
         subChapter: [],
@@ -246,7 +216,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/remote/pull',
         icon: 'commons/remote.svg',
-        class: 'text-dark',
         open: false,
         title: 'pull',
         subChapter: [],
@@ -254,7 +223,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/remote/push',
         icon: 'commons/remote.svg',
-        class: 'text-dark',
         open: false,
         title: 'push',
         subChapter: [],
@@ -262,7 +230,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/remote/remote',
         icon: 'commons/remote.svg',
-        class: 'text-dark',
         open: false,
         title: 'remote',
         subChapter: [],
@@ -270,7 +237,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/remote/submodule',
         icon: 'commons/remote.svg',
-        class: 'text-dark',
         open: false,
         title: 'submodule',
         subChapter: [],
@@ -280,14 +246,12 @@ export const chapters: Chapter[] = [
   {
     path: '/courses/inspection',
     icon: 'commons/inspection.svg',
-    class: 'text-dark',
     open: false,
     title: 'Inspección',
     subChapter: [
       {
         path: '/courses/inspection/show',
         icon: 'commons/inspection.svg',
-        class: 'text-dark',
         open: false,
         title: 'show',
         subChapter: [],
@@ -295,7 +259,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/inspection/log',
         icon: 'commons/inspection.svg',
-        class: 'text-dark',
         open: false,
         title: 'log',
         subChapter: [],
@@ -303,7 +266,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/inspection/diff',
         icon: 'commons/inspection.svg',
-        class: 'text-dark',
         open: false,
         title: 'diff',
         subChapter: [],
@@ -311,7 +273,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/inspection/tool',
         icon: 'commons/inspection.svg',
-        class: 'text-dark',
         open: false,
         title: 'difftool',
         subChapter: [],
@@ -319,7 +280,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/inspection/range-diff',
         icon: 'commons/inspection.svg',
-        class: 'text-dark',
         open: false,
         title: 'range-diff',
         subChapter: [],
@@ -327,7 +287,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/inspection/short-log',
         icon: 'commons/inspection.svg',
-        class: 'text-dark',
         open: false,
         title: 'short log',
         subChapter: [],
@@ -335,7 +294,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/inspection/describe',
         icon: 'commons/remote.svg',
-        class: 'text-dark',
         open: false,
         title: 'describe',
         subChapter: [],
@@ -345,14 +303,12 @@ export const chapters: Chapter[] = [
   {
     path: '/courses/patching',
     icon: 'commons/patching.svg',
-    class: 'text-dark',
     open: false,
     title: 'Patching',
     subChapter: [
       {
         path: '/courses/patching/git',
         icon: 'commons/patching.svg',
-        class: 'text-dark',
         open: false,
         title: 'apply',
         subChapter: [],
@@ -360,7 +316,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/patching/git',
         icon: 'commons/patching.svg',
-        class: 'text-dark',
         open: false,
         title: 'cherry-pick',
         subChapter: [],
@@ -368,7 +323,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/patching/git',
         icon: 'commons/patching.svg',
-        class: 'text-dark',
         open: false,
         title: 'diff',
         subChapter: [],
@@ -376,7 +330,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/patching/git',
         icon: 'commons/patching.svg',
-        class: 'text-dark',
         open: false,
         title: 'rebase',
         subChapter: [],
@@ -384,7 +337,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/patching/git',
         icon: 'commons/patching.svg',
-        class: 'text-dark',
         open: false,
         title: 'revert',
         subChapter: [],
@@ -394,14 +346,12 @@ export const chapters: Chapter[] = [
   {
     path: '/courses/debugging',
     icon: 'commons/debugging.svg',
-    class: 'text-dark',
     open: false,
     title: 'Debugging',
     subChapter: [
       {
         path: '/courses/debugging/bisect',
         icon: 'commons/debugging.svg',
-        class: 'text-dark',
         open: false,
         title: 'bisect',
         subChapter: [],
@@ -409,7 +359,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/debugging/blame',
         icon: 'commons/debugging.svg',
-        class: 'text-dark',
         open: false,
         title: 'blame',
         subChapter: [],
@@ -417,7 +366,6 @@ export const chapters: Chapter[] = [
       {
         path: '/courses/debugging/grep',
         icon: 'commons/debugging.svg',
-        class: 'text-dark',
         open: false,
         title: 'grep',
         subChapter: [],

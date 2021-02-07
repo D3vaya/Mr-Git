@@ -12,6 +12,7 @@ li {
     border-radius: 10px;
     font-size: 1em;
     width: 100%;
+
     &:hover {
       background-color: #d6d4cc;
     }
@@ -24,15 +25,21 @@ li {
 .submenu a {
   display: block;
   font-weight: bold;
+  border: 1px solid transparent;
   font-size: 15px;
+  &:hover {
+    border: 1px solid #413000;
+  }
   img {
     height: 18px !important;
   }
 }
 .submenu li {
   color: #000;
+  width: 200px !important;
 }
 
 .active {
   background-color: white !important;
+  border: 1px solid #413000 !important;
 }
