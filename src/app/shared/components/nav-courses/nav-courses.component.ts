@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CoursesService } from 'src/app/core/services/courses.service';
+import { UtilsService } from 'src/app/core/services/utils.service';
 import { Link } from '../../../core/models/link.model';
 @Component({
   selector: 'app-nav-courses',
@@ -8,13 +8,14 @@ import { Link } from '../../../core/models/link.model';
 })
 export class NavCoursesComponent implements OnInit {
   chapters: Link[];
-  constructor(private coursesService: CoursesService) {}
+  menuVisible = false;
 
-  ngOnInit(): void {
-    this.initChapters();
-  }
+  constructor(private utilsService: UtilsService) {}
 
-  initChapters() {
-    this.chapters = this.coursesService.getChapters();
+  ngOnInit(): void {}
+
+  activeSidebar(event) {
+    this.menuVisible = !this.menuVisible;
+    this.utilsService.sendStatusSidebar(this.menuVisible);
   }
 }

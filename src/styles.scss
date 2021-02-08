@@ -2,8 +2,11 @@ $primary-color: #f0f0e8;
 $secondary-color: #d6d4cc;
 @import "~highlight.js/styles/monokai-sublime.css";
 body {
-  font-family: "Source Code Pro", sans-serif, Helvetica;
+  font-family: "Prompt", sans-serif, Helvetica;
   background-color: $primary-color !important;
+}
+img {
+  max-width: 100%;
 }
 
 .fixed-top {
@@ -13,25 +16,77 @@ body {
   left: 0;
   z-index: 1030;
 }
+@font-face {
+  font-family: "Prompt";
+  src: url(./assets/fonts/web/Prompt-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url(./assets/fonts/web/Prompt-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Prompt";
+  src: url(./assets/fonts/web/Prompt-Light.ttf) format("truetype");
+  font-weight: light;
+  font-style: normal;
+}
 
-@font-face {
-  font-family: "Potta One";
-  src: local("Potta One"),
-    url(./assets/fonts/brand/PottaOne-Regular.ttf) format("truetype");
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    font-size: 15px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
 }
-@font-face {
-  font-family: "Source Code Pro";
-  src: local("SourceCodePro-Regular"),
-    url(./assets/fonts/web/SourceCodePro-Regular.ttf) format("truetype");
+@media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+  body {
+    font-size: 15px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
 }
-@font-face {
-  font-family: "Roboto";
-  src: local("Roboto"),
-    url(./assets/fonts/web/Roboto-Regular.ttf) format("truetype");
+@media only screen and (min-width: 768px) and (max-width: 992px) and (orientation: portrait) {
+  body {
+    font-size: 15px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
 }
 
-@font-face {
-  font-family: "Roboto Light";
-  src: local("Roboto-Light"),
-    url(./assets/fonts/web/Roboto-Light.ttf) format("truetype");
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+// custom
+@media only screen and (min-width: 540px) and (max-width: 992px) and (orientation: portrait) {
+  body {
+    font-size: 15px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
 }

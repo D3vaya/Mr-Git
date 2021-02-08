@@ -10,6 +10,41 @@ const routes: Routes = [
     component: ChapterContainerComponent,
     children: CHAPTERS_ROUTES,
   },
+  {
+    path: 'repository/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
+  {
+    path: 'commands/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
+  {
+    path: 'branch-merge/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
+  {
+    path: 'remote/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
+  {
+    path: 'inspection/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
+  {
+    path: 'patching/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
+  {
+    path: 'debugging/:tag',
+    component: ChapterContainerComponent,
+    children: CHAPTERS_ROUTES,
+  },
 ];
 
 @NgModule({
