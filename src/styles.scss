@@ -5,6 +5,9 @@ body {
   font-family: "Source Code Pro", sans-serif, Helvetica;
   background-color: $primary-color !important;
 }
+img {
+  max-width: 100%;
+}
 
 .fixed-top {
   position: fixed;
