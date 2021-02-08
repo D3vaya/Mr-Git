@@ -1,25 +1,23 @@
 main {
   height: 100%;
 }
+h2{
+  font-weight: 600;
+}
 .bg-landing {
   background-color: #f0f0e8;
 }
 .description {
-  font-family: "Source Code Pro";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 37px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  font-size: 1.2em;
 }
 
 .btn-start {
   background: #f05133;
-  border-radius: 20px;
+  border-radius: 10px;
   text-decoration: none;
   z-index: 1000;
+  padding: 5px;
+  width: 280px;
   &:hover {
     background: #993321;
   }
@@ -33,7 +31,6 @@ main {
 }
 
 .btn-start::content {
-  font-family: Source Code Pro;
   font-style: normal;
   font-weight: bold;
   font-size: 27px;
@@ -42,25 +39,42 @@ main {
   align-items: center;
   text-align: center;
   color: #f0f0e8;
-  padding: 10px;
-  width: 240px;
+
+}
+.roadmap{
+  width: 280px;
+  text-align: center;
+  a {
+    text-decoration: underline;
+    color: #413000;//agregar variable
+  }
 }
 .footer-wave {
-  width: 100vw;
-  bottom: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    img{
+      width: 100vw;
+    }
+  
 }
 
-.merge-bg {
-  position: absolute;
-  left: 10%;
-  top: 0;
-  height: 85%;
-  z-index: 10;
+.timeline-xs{
+
+  max-height: 20vh;
+  margin: 5vh auto 5vh auto;
+
 }
-.merge-bg-2 {
-  position: absolute;
-  right: 10%;
-  top: 0;
-  height: 85%;
-  z-index: 10;
-}
+@media screen and (max-width: 576px) {
+
+  .text-xs-center{
+    text-align: center;
+  }
+  
+  .center-element{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+ }
