@@ -27,7 +27,7 @@
       <a
         class="nav-link text-dark"
         routerLinkActive="active"
-        routerLink="{{ subchapter.path }}"
+        (click)="routerSite(subchapter.path)"
       >
         <img
           src="../../../assets/img/{{ subchapter.icon }}"
