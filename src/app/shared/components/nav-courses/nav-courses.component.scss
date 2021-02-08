@@ -2,6 +2,12 @@ header.navbar {
   height: 50px;
   background-color: #d6d4cc !important;
   color: #9a9994 !important;
+  .social {
+    margin-right: 10px;
+    a {
+      margin-right: 10px;
+    }
+  }
 }
 
 .navbar-toggler {
