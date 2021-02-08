@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-12 mt-4 border-bottom">
+    <app-title-chapter [params]="params"></app-title-chapter>
+  </div>
+  <div class="col-12 mt-4">
+    <markdown
+      *ngIf="!showNotFound"
+      lineHighlight
+      emoji
+      [src]="currentPath"
+      (load)="onLoad($event)"
+      (error)="onError($event)"
+    ></markdown>
+    <app-chapter-not-found *ngIf="showNotFound"></app-chapter-not-found>
+  </div>
+</div>

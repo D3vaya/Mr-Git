@@ -10,5 +10,4 @@ export class CoursesService {
   getChapters(): Chapter[] {
     return chapters;
   }
-  chapter() {}
 }

@@ -32,9 +32,13 @@ ng s | ng server
 - [Bootstrap](https://getbootstrap.com/) - Versión 4.6.0
 - [Flaticon](https://flaticon.es/)
 
-## Autores ✒️
+## Autor 📝
 
-- **Juan Carlos Ayala** _</>_ [d3vaya](https://github.com/d3vaya)
+- **Juan Carlos Ayala** _Dev_ [d3vaya](https://github.com/d3vaya)
+
+## Colaborador ✒️
+
+- **Fabian Perez** _Design_ [nagash93](https://github.com/nagash93)
 
 ## Licencia 📄
 
