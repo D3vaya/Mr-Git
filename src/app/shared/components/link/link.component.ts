@@ -18,8 +18,8 @@ export class LinkComponent implements OnInit {
 
   constructor(private router: Router) {}
   img: string;
+
   ngOnInit(): void {
-    console.log(this.params);
     this.img = stateMenu.Off;
   }
 

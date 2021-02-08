@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UtilsService } from 'src/app/core/services/utils.service';
 import { Link } from '../../../core/models/link.model';
 @Component({
@@ -19,7 +20,7 @@ export class NavCoursesComponent implements OnInit {
    */
   menuVisible = false;
 
-  constructor(private utilsService: UtilsService) {}
+  constructor(private utilsService: UtilsService, private router: Router) {}
 
   ngOnInit(): void {}
 
@@ -29,5 +30,9 @@ export class NavCoursesComponent implements OnInit {
   activeSidebar(event) {
     this.menuVisible = !this.menuVisible;
     this.utilsService.sendStatusSidebar(this.menuVisible);
+  }
+
+  routerLanding() {
+    this.router.navigate(['/']);
   }
 }
