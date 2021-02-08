@@ -11,9 +11,19 @@ import { UtilsService } from 'src/app/core/services/utils.service';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
+  /**
+   * @description arreglo que contiene la estructura de capitulos del curso
+   */
   chapters: Chapter[];
-  stat$: Observable<boolean>;
+  /**
+   * @description observable que esta conectado al cambio del toggle en el header
+   */
+  status$: Observable<boolean>;
+  /**
+   * @description oculta el toggle del menu si es smarphone
+   */
   classSidebar = 'none';
+
   constructor(
     private coursesService: CoursesService,
     private utilService: UtilsService
@@ -21,9 +31,8 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
     this.getChapters();
-    this.stat$ = this.utilService.getStatusSidebar$();
-    this.stat$.subscribe((status) => {
-      console.log(status);
+    this.status$ = this.utilService.getStatusSidebar$();
+    this.status$.subscribe((status) => {
       if (status) {
         this.classSidebar = 'block';
       } else {
@@ -32,15 +41,10 @@ export class SidebarComponent implements OnInit {
     });
   }
 
+  /**
+   * @description Trae el arreglo de capitulos para mostrar en el menu
+   */
   getChapters() {
     this.chapters = this.coursesService.getChapters();
-  }
-  showSidebar(event) {
-    if (event) {
-      this.classSidebar = 'block';
-    } else {
-      this.classSidebar = 'none';
-    }
-    console.log(event);
   }
 }

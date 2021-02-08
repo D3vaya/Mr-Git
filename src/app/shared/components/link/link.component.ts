@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Chapter } from 'src/app/core/models/chapter.model';
-import { Link } from 'src/app/core/models/link.model';
 enum stateMenu {
   Off = 'flechaderecha.svg',
   On = 'flechaabajo.svg',
@@ -12,7 +12,11 @@ enum stateMenu {
 })
 export class LinkComponent implements OnInit {
   @Input() params: Chapter;
-  constructor() {}
+  /**
+   * @description arreglo que contiene la estructura de capitulos del curso
+   */
+
+  constructor(private router: Router) {}
   img: string;
 
   ngOnInit(): void {
@@ -23,11 +27,18 @@ export class LinkComponent implements OnInit {
     this.params.open = !this.params.open;
     this.changeStatusImg();
   }
+
+  /**
+   * @description cambia el icono de la flecha si esta arriba o abajo
+   */
   changeStatusImg() {
     if (this.img == stateMenu.Off) {
       this.img = stateMenu.On;
     } else {
       this.img = stateMenu.Off;
     }
+  }
+  routerSite(path) {
+    this.router.navigate([path]);
   }
 }
