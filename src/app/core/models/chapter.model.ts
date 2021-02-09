@@ -5,3 +5,8 @@ export interface Chapter {
   open: boolean;
   subChapter: Chapter[];
 }
+
+export interface RouteChapter {
+  title: string;
+  image: string;
+}

@@ -1,23 +1,8 @@
-$primary-color: #f0f0e8;
-$secondary-color: #d6d4cc;
 @import "~highlight.js/styles/monokai-sublime.css";
+@import "./assets/styles/main.scss";
 body {
   font-family: "Prompt", sans-serif, Helvetica;
-  background-color: $primary-color !important;
-}
-img {
-  max-width: 100%;
-}
-a {
-  cursor: pointer;
-}
-
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+  background-color: map-get($pallete, primary) !important;
 }
 @font-face {
   font-family: "Prompt";
@@ -33,9 +18,29 @@ a {
 }
 @font-face {
   font-family: "Prompt";
+  src: url(./assets/fonts/web/Prompt-Medium.ttf) format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Prompt";
   src: url(./assets/fonts/web/Prompt-Light.ttf) format("truetype");
   font-weight: light;
   font-style: normal;
+}
+img {
+  max-width: 100%;
+}
+a {
+  cursor: pointer;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
 /* Portrait and Landscape */

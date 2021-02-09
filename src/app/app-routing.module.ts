@@ -5,6 +5,7 @@ import { CoursesLayoutComponent } from './layouts/courses-layout/courses-layout.
 import { PublicLayoutComponent } from './layouts/public-layout/public-layout.component';
 import { COURSE_ROUTES } from './routes/course.routes';
 import { LANDING_ROUTES } from './routes/landing.routes';
+
 const routes: Routes = [
   {
     path: '',
@@ -16,7 +17,6 @@ const routes: Routes = [
     component: CoursesLayoutComponent,
     children: COURSE_ROUTES,
   },
-
   { path: '**', component: PageNotFoundComponent },
 ];
 

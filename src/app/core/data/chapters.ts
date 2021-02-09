@@ -7,6 +7,13 @@ export const chapters: Chapter[] = [
     title: 'Config & Setup',
     subChapter: [
       {
+        path: '/courses/config/introduction',
+        icon: 'commons/config.svg',
+        open: false,
+        title: 'Introducción',
+        subChapter: [],
+      },
+      {
         path: '/courses/config/git',
         icon: 'commons/config.svg',
         open: false,

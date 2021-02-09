@@ -1,6 +1,6 @@
 header.navbar {
   height: 50px;
-  background-color: #d6d4cc !important;
+  background-color: #d6d4cc;
   color: #9a9994 !important;
   .social {
     margin-right: 10px;
@@ -11,8 +11,12 @@ header.navbar {
 }
 
 .navbar-toggler {
-  background-color: #413000;
+  background-color: #d6d4cc;
   float: right;
   position: absolute;
+  border: 1px solid transparent;
   right: 10px;
+  &:hover {
+    border: 1px solid white;
+  }
 }

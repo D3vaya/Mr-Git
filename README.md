@@ -31,14 +31,16 @@ ng s | ng server
 - [Angular](https://angular.io/) - Versión 10
 - [Bootstrap](https://getbootstrap.com/) - Versión 4.6.0
 - [Flaticon](https://flaticon.es/)
+- [ngx-markdown](https://www.npmjs.com/package/ngx-markdown#usage) - 11.0.1
+- [the icon "heart" is provided by loading.io](https://loading.io/icon/)
 
 ## Autor 📝
 
-- **Juan Carlos Ayala** _Dev_ [d3vaya](https://github.com/d3vaya)
+- **_Developer_** **Juan Carlos Ayala** [d3vaya](https://github.com/d3vaya)
 
 ## Colaborador ✒️
 
-- **Fabian Perez** _Design_ [nagash93](https://github.com/nagash93)
+- **_Designer_** **Fabian Perez** [nagash93](https://github.com/nagash93)
 
 ## Licencia 📄
 

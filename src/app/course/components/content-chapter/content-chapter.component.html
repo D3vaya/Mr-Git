@@ -3,14 +3,18 @@
     <app-title-chapter [params]="params"></app-title-chapter>
   </div>
   <div class="col-12 mt-4">
+    <app-loading *ngIf="state.loading"></app-loading>
     <markdown
-      *ngIf="!showNotFound"
+      *ngIf="!visibleNotFound"
       lineHighlight
       emoji
-      [src]="pathSite"
+      [data]="markdown"
       (load)="onLoad($event)"
       (error)="onError($event)"
     ></markdown>
-    <app-chapter-not-found *ngIf="showNotFound"></app-chapter-not-found>
+    <app-chapter-not-found
+      [params]="params"
+      *ngIf="visibleNotFound"
+    ></app-chapter-not-found>
   </div>
 </div>

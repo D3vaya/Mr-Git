@@ -25,9 +25,10 @@
   <ul class="submenu" *ngIf="params.open">
     <li *ngFor="let subchapter of params.subChapter">
       <a
-        class="nav-link text-dark"
+        class="nav-link"
         routerLinkActive="active"
         routerLink="{{ subchapter.path }}"
+        [ngStyle]="{ color: businessStyle.sidebar.colorLink }"
       >
         <img
           src="../../../assets/img/{{ subchapter.icon }}"

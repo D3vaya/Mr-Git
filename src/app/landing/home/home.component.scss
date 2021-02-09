@@ -1,7 +1,7 @@
 main {
   height: 100%;
 }
-h2{
+h2 {
   font-weight: 600;
 }
 .bg-landing {
@@ -29,7 +29,10 @@ h2{
     }
   }
 }
-
+.linkRepository {
+  text-decoration: none;
+  color: #413000;
+}
 .btn-start::content {
   font-style: normal;
   font-weight: bold;
@@ -39,42 +42,52 @@ h2{
   align-items: center;
   text-align: center;
   color: #f0f0e8;
-
+  cursor: pointer;
+  z-index: 100;
 }
-.roadmap{
+.roadmap {
   width: 280px;
   text-align: center;
   a {
-    text-decoration: underline;
-    color: #413000;//agregar variable
+    font-weight: bold;
+    text-decoration: none;
+    color: #413000; //agregar variable
   }
 }
 .footer-wave {
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    img{
-      width: 100vw;
-    }
-  
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10 !important;
+  img {
+    width: 100vw;
+  }
 }
 
-.timeline-xs{
-
+.timeline-xs {
   max-height: 20vh;
   margin: 5vh auto 5vh auto;
-
 }
 @media screen and (max-width: 576px) {
-
-  .text-xs-center{
+  .text-xs-center {
     text-align: center;
   }
-  
-  .center-element{
-    display: flex!important;
-    align-items: center!important;
-    justify-content: center!important;
+
+  .center-element {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
- }
+}
+@media screen and (max-width: 576px) {
+  .text-xs-center {
+    text-align: center;
+  }
+
+  .center-element {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
