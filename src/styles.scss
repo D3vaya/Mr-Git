@@ -1,9 +1,8 @@
-$primary-color: #f0f0e8;
-$secondary-color: #d6d4cc;
 @import "~highlight.js/styles/monokai-sublime.css";
+@import "./assets/styles/main.scss";
 body {
   font-family: "Prompt", sans-serif, Helvetica;
-  background-color: $primary-color !important;
+  background-color: map-get($pallete, primary) !important;
 }
 @font-face {
   font-family: "Prompt";
