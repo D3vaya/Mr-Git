@@ -2,15 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Event, Router, NavigationEnd } from '@angular/router';
 import { Location } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
+import { RouteChapter } from 'src/app/core/models/chapter.model';
+import { MarkdownService } from 'ngx-markdown';
 
 enum CodeResponse {
   Error = 404,
 }
 
-interface RouteChapter {
-  title: string;
-  image: string;
-}
 @Component({
   selector: 'app-content-chapter',
   templateUrl: './content-chapter.component.html',
@@ -28,12 +26,27 @@ export class ContentChapterComponent implements OnInit {
   /**
    * @description controla si se ve el componente notfound del curso
    */
-  showNotFound = false;
+  visibleNotFound = false;
+  markdown: string;
 
-  constructor(location: Location, router: Router) {
+  constructor(
+    location: Location,
+    router: Router,
+    private markDownService: MarkdownService
+  ) {
     router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
         this.pathSite = this.buildFullRoute(location);
+        this.markDownService.getSource(this.pathSite).subscribe(
+          (site) => {
+            this.visibleNotFound = false;
+            this.markdown = site;
+          },
+          (error) => {
+            this.visibleNotFound = true;
+            console.log(error);
+          }
+        );
       }
     });
   }
@@ -57,12 +70,12 @@ export class ContentChapterComponent implements OnInit {
   }
 
   onLoad(event) {
-    this.showNotFound = false;
+    this.visibleNotFound = false;
   }
 
   onError(event: HttpErrorResponse) {
     if (event.status === CodeResponse.Error) {
-      this.showNotFound = true;
+      this.visibleNotFound = true;
       console.log('Lo sentimos, este capitulo se encuentra en desarrollo');
     }
   }
