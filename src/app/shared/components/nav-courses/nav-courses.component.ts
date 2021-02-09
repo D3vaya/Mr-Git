@@ -16,8 +16,14 @@ export class NavCoursesComponent implements OnInit {
    * @description variable que controla si se ve o no el toggle del header
    */
   menuVisible = false;
-  logoBrand = 'landing/logo.svg';
+  /**
+   * @description Objeto que referencia a las constante business
+   */
   businessStyle: Business = environment.business;
+  /**
+   * @description controla que logo de mr git muestra en el header
+   */
+  logoBrand = 'landing/logo.svg';
 
   constructor(private utilsService: UtilsService, private router: Router) {
     if (this.businessStyle.business) {
