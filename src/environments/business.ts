@@ -1,5 +1,5 @@
 export const business = {
-  business: false, // activa el modo business
+  modeBusiness: false, // activa el modo business
   businessImage: 'logo.svg', // nombre del logo corporativo
   businessColor: '#D6D4CC', // color corporativo
   businessPath: 'assets/img/landing/', // ruta donde almacenara la imagen/es

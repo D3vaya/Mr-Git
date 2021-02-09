@@ -9,4 +9,5 @@ export interface Chapter {
 export interface RouteChapter {
   title: string;
   image: string;
+  context: boolean;
 }
