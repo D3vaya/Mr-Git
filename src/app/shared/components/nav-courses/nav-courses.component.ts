@@ -16,9 +16,14 @@ export class NavCoursesComponent implements OnInit {
    * @description variable que controla si se ve o no el toggle del header
    */
   menuVisible = false;
+  logoBrand = 'landing/logo.svg';
   businessStyle: Business = environment.business;
 
-  constructor(private utilsService: UtilsService, private router: Router) {}
+  constructor(private utilsService: UtilsService, private router: Router) {
+    if (this.businessStyle.business) {
+      this.logoBrand = 'commons/logo-corp.svg';
+    }
+  }
 
   ngOnInit(): void {}
 
