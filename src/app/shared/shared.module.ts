@@ -10,20 +10,25 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { MarkdownModule } from 'ngx-markdown';
 import { ChapterNotFoundComponent } from './components/chapter-not-found/chapter-not-found.component';
 import { RouterModule } from '@angular/router';
+import { LoadingComponent } from './components/loading/loading.component';
+import { ThanksComponent } from './thanks/thanks.component';
 @NgModule({
   declarations: [
     LinkComponent,
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
+    LoadingComponent,
     NavCoursesComponent,
     PageNotFoundComponent,
     ChapterNotFoundComponent,
+    ThanksComponent,
   ],
   exports: [
     LinkComponent,
     HeaderComponent,
     FooterComponent,
+    LoadingComponent,
     SidebarComponent,
     NavCoursesComponent,
     PageNotFoundComponent,

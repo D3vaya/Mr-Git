@@ -32,6 +32,7 @@ ng s | ng server
 - [Bootstrap](https://getbootstrap.com/) - Versión 4.6.0
 - [Flaticon](https://flaticon.es/)
 - [ngx-markdown](https://www.npmjs.com/package/ngx-markdown#usage) - 11.0.1
+- [the icon "heart" is provided by loading.io](https://loading.io/icon/)
 
 ## Autor 📝
 

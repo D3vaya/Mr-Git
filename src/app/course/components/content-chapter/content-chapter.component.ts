@@ -8,6 +8,11 @@ import { MarkdownService } from 'ngx-markdown';
 enum CodeResponse {
   Error = 404,
 }
+interface State {
+  loading: boolean;
+  data: {};
+  error: null;
+}
 
 @Component({
   selector: 'app-content-chapter',
@@ -18,6 +23,11 @@ export class ContentChapterComponent implements OnInit {
   params: RouteChapter = {
     title: '',
     image: '',
+  };
+  state: State = {
+    loading: true,
+    data: {},
+    error: null,
   };
   /**
    * @description ruta del site markdown a mostrar
@@ -35,14 +45,18 @@ export class ContentChapterComponent implements OnInit {
     private markDownService: MarkdownService
   ) {
     router.events.subscribe((event: Event) => {
+      this.state.loading = true;
       if (event instanceof NavigationEnd) {
         this.pathSite = this.buildFullRoute(location);
         this.markDownService.getSource(this.pathSite).subscribe(
           (site) => {
+            this.state.loading = false;
             this.visibleNotFound = false;
             this.markdown = site;
           },
           (error) => {
+            this.state.loading = false;
+            this.state.error = error;
             this.visibleNotFound = true;
             console.log(error);
           }

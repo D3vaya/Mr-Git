@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Business } from 'src/app/core/models/business';
 import { Chapter } from 'src/app/core/models/chapter.model';
+import { environment } from 'src/environments/environment';
 enum stateMenu {
   Off = 'flechaderecha.svg',
   On = 'flechaabajo.svg',
@@ -16,8 +18,9 @@ export class LinkComponent implements OnInit {
    * @description arreglo que contiene la estructura de capitulos del curso
    */
 
-  constructor(private router: Router) {}
+  businessStyle: Business = environment.business;
   img: string;
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.img = stateMenu.Off;

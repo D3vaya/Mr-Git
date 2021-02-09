@@ -1,4 +1,8 @@
-<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+<header
+  class="navbar sticky-top flex-md-nowrap p-0"
+  [ngStyle]="{ 'background-color': businessStyle.businessColor }"
+  [class.shadow-sm]="businessStyle.style.shadow"
+>
   <a
     class="navbar-brand col-md-3 col-lg-2 me-0 px-3 navbar-brand"
     (click)="routerLanding()"
@@ -10,7 +14,7 @@
     />
   </a>
   <button
-    class="navbar-toggler position-absolute d-lg-none collapsed"
+    class="navbar-toggler position-absolute shadow-lg d-lg-none collapsed"
     type="button"
     data-bs-toggle="collapse"
     data-bs-target="#sidebarMenu"
@@ -19,9 +23,9 @@
     aria-label="Toggle navigation"
     (click)="activeSidebar($event)"
   >
-    <span class="navbar-toggler-icon"></span>
+    <img src="../../../../assets/img/bg/burger.svg" alt="burger" height="30" />
   </button>
-  <div class="social">
+  <div class="social" *ngIf="!businessStyle.business">
     <a href="https://github.com/D3vaya/Mr-Git" target="_blank" class="mr-2">
       <img
         src="../../../../assets/img/social/github.svg"
@@ -36,5 +40,13 @@
         height="22"
       />
     </a>
+  </div>
+  <div class="social" *ngIf="businessStyle.business">
+    <img
+      src="{{ businessStyle.businessPath }}{{ businessStyle.businessImage }}"
+      alt="imagen corporativa"
+      class="mr-3"
+      height="35"
+    />
   </div>
 </header>
