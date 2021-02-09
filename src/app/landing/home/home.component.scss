@@ -29,7 +29,10 @@ h2 {
     }
   }
 }
-
+.linkRepository {
+  text-decoration: none;
+  color: #413000;
+}
 .btn-start::content {
   font-style: normal;
   font-weight: bold;
@@ -46,7 +49,8 @@ h2 {
   width: 280px;
   text-align: center;
   a {
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
     color: #413000; //agregar variable
   }
 }
