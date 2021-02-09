@@ -1,5 +1,5 @@
 export interface Business {
-  business: boolean;
+  modeBusiness: boolean;
   businessImage: string;
   businessColor: string;
   businessPath: string;

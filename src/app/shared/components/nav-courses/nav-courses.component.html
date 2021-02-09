@@ -25,7 +25,7 @@
   >
     <img src="../../../../assets/img/bg/burger.svg" alt="burger" height="30" />
   </button>
-  <div class="social" *ngIf="!businessStyle.business">
+  <div class="social" *ngIf="!businessStyle.modeBusiness">
     <a href="https://github.com/D3vaya/Mr-Git" target="_blank" class="mr-2">
       <img
         src="../../../../assets/img/social/github.svg"
@@ -41,7 +41,7 @@
       />
     </a>
   </div>
-  <div class="social" *ngIf="businessStyle.business">
+  <div class="social" *ngIf="businessStyle.modeBusiness">
     <img
       src="{{ businessStyle.businessPath }}{{ businessStyle.businessImage }}"
       alt="imagen corporativa"

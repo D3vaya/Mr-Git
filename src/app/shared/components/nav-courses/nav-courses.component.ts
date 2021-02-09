@@ -26,7 +26,7 @@ export class NavCoursesComponent implements OnInit {
   logoBrand = 'landing/logo.svg';
 
   constructor(private utilsService: UtilsService, private router: Router) {
-    if (this.businessStyle.business) {
+    if (this.businessStyle.modeBusiness) {
       this.logoBrand = 'commons/logo-corp.svg';
     }
   }
