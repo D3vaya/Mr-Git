@@ -3,9 +3,9 @@
     <app-title-chapter [params]="params"></app-title-chapter>
   </div>
   <div class="col-12 mt-4">
-    <app-loading *ngIf="state.loading"></app-loading>
+    <!-- <app-loading *ngIf="state.loading"></app-loading> -->
     <markdown
-      *ngIf="!visibleNotFound"
+      *ngIf="!state.loading && !visibleNotFound"
       lineHighlight
       emoji
       [data]="markdown"

@@ -23,6 +23,7 @@ export class ContentChapterComponent implements OnInit {
   params: RouteChapter = {
     title: '',
     image: '',
+    context: false,
   };
   state: State = {
     loading: true,
@@ -81,6 +82,10 @@ export class ContentChapterComponent implements OnInit {
   captureRoute(arrayPath) {
     this.params.title = arrayPath[3];
     this.params.image = arrayPath[2] + '.svg';
+    if (arrayPath[3] === 'context') {
+      this.params.title = 'Contexto';
+      this.params.image = arrayPath[3] + '.svg';
+    }
   }
 
   onLoad(event) {
