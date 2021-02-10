@@ -1,0 +1,11 @@
+@import "../../../assets/styles/main.scss";
+.title{
+    font-size: 4em;
+}
+.detail{
+    background-color:  map-get($pallete, secondary);
+    border-radius: 20px;
+}
+.detail-title{
+    font-weight: bold;
+}
