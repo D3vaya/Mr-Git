@@ -83,7 +83,7 @@ export class ContentChapterComponent implements OnInit {
     this.params.title = arrayPath[3];
     this.params.image = arrayPath[2] + '.svg';
     if (arrayPath[3] === 'context') {
-      this.params.title = 'Contexto';
+      this.params.title = 'Introducción';
       this.params.image = arrayPath[3] + '.svg';
     }
   }

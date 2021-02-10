@@ -3,30 +3,35 @@
 body {
   font-family: "Prompt", sans-serif, Helvetica;
   background-color: map-get($pallete, primary) !important;
+  font-display: swap;
 }
 @font-face {
   font-family: "Prompt";
   src: url(./assets/fonts/web/Prompt-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Prompt";
   src: url(./assets/fonts/web/Prompt-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Prompt";
   src: url(./assets/fonts/web/Prompt-Medium.ttf) format("truetype");
   font-weight: medium;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Prompt";
   src: url(./assets/fonts/web/Prompt-Light.ttf) format("truetype");
   font-weight: light;
   font-style: normal;
+  font-display: swap;
 }
 img {
   max-width: 100%;

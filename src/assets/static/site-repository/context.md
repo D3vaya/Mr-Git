@@ -1,1 +1,3 @@
-# <center> **En construcción** <img class="mt-5" src="assets/static/images/en-construccion.svg" alt="nina" height="214" style="width:100%" loading="lazy"></center>
+## <img src="assets/static/images/aprendizaje.svg" alt="lanzamiento de cohete" height="50"/> **Partiendo con lo escencial**
+
+Iniciar y Clonar un repositorio, son una de las cosas que mas hacemos en el mundo del desarrollo. Cuando iniciamos proyectos nuevos, colaboramos en algun proyecto open source como Mr git por ejemplo. Es algo del dia a dia en un dev. Pero aveces no basto con solo saber que es clonar un repositorio, o crear uno. Siempre es necesarios saber tecnicamente que es lo que pasa detras de los comandos que ejecutas en la amada linea de comandos. Pero tranquilo, estas en el lugar correcto 😗.
