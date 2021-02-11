@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Business } from 'src/app/core/models/business';
+import { Business } from 'src/app/core/models/business.model';
 import { Chapter } from 'src/app/core/models/chapter.model';
 import { environment } from 'src/environments/environment';
 enum stateMenu {

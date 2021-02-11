@@ -5,6 +5,8 @@ import { CoursesLayoutComponent } from './layouts/courses-layout/courses-layout.
 import { PublicLayoutComponent } from './layouts/public-layout/public-layout.component';
 import { COURSE_ROUTES } from './routes/course.routes';
 import { LANDING_ROUTES } from './routes/landing.routes';
+import { CMS_ROUTES } from './routes/cms.routes';
+import { PrivateLayoutComponent } from './layouts/private-layout/private-layout.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,11 @@ const routes: Routes = [
     path: 'courses',
     component: CoursesLayoutComponent,
     children: COURSE_ROUTES,
+  },
+  {
+    path: 'cms',
+    component: PrivateLayoutComponent,
+    children: CMS_ROUTES,
   },
   { path: '**', component: PageNotFoundComponent },
 ];

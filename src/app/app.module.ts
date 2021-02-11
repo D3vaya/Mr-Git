@@ -16,9 +16,14 @@ import { SecurityContext } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-
+import { PrivateLayoutComponent } from './layouts/private-layout/private-layout.component';
 @NgModule({
-  declarations: [AppComponent, PublicLayoutComponent, CoursesLayoutComponent],
+  declarations: [
+    AppComponent,
+    PublicLayoutComponent,
+    CoursesLayoutComponent,
+    PrivateLayoutComponent,
+  ],
   imports: [
     BrowserModule,
     SharedModule,
@@ -29,7 +34,9 @@ import { environment } from '../environments/environment';
       sanitize: SecurityContext.NONE,
       loader: HttpClient,
     }),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
   ],
   providers: [
     {
@@ -37,7 +44,6 @@ import { environment } from '../environments/environment';
       useValue: <HighlightOptions>{
         lineNumbers: true,
         coreLibraryLoader: () => import('highlight.js/lib/core'),
-        lineNumbersLoader: () => import('highlightjs-line-numbers.js'), // Optional, only if you want the line numbers
         languages: {
           shell: () => import('highlight.js/lib/languages/shell'),
           css: () => import('highlight.js/lib/languages/css'),

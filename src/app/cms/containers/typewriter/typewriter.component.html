@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12 mt-5">
+    <h1>Editor</h1>
+    <button (click)="changeStatusPreview()">
+      <img
+        src="../../../../assets/img/commons/{{ imageStatus }}"
+        alt="previewStatus"
+        height="20"
+      />
+    </button>
+  </div>
+  <div class="col-6 mt-2" *ngIf="!visiblePreview">
+    <textarea
+      spellcheck="false"
+      lang="{{ config.language }}"
+      w
+      class="variable-textarea"
+      [(ngModel)]="markdownWriter"
+    ></textarea>
+
+    <!-- <textarea [(ngModel)]="markdownWriter"></textarea> -->
+  </div>
+  <div class="col-6 mt-2">
+    <app-preview [data]="markdownWriter"></app-preview>
+  </div>
+</div>
