@@ -38,6 +38,9 @@ export class ContentChapterComponent implements OnInit {
    * @description controla si se ve el componente notfound del curso
    */
   visibleNotFound = false;
+  /**
+   * @description contenido del site .md
+   */
   markdown: string;
 
   constructor(
