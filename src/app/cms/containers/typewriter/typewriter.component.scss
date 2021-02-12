@@ -24,13 +24,14 @@ textarea {
 .actions {
   button {
     border: none;
-    background-color: #a29bfe;
+    background-color: #6c5ce7;
     color: white;
-    box-shadow: 1px 2px 4px 0px #2d3436;
-    -ms-box-shadow: 1px 2px 4px 0px #2d3436;
-    -o-box-shadow: 1px 2px 4px 0px #2d3436;
-    -moz-box-shadow: 1px 2px 4px 0px #2d3436;
-    -webkit-box-shadow: 1px 2px 4px 0px #2d3436;
+    // box-shadow: 1px 2px 4px 0px #2d3436;
+    // -ms-box-shadow: 1px 2px 4px 0px #2d3436;
+    // -o-box-shadow: 1px 2px 4px 0px #2d3436;
+    // -moz-box-shadow: 1px 2px 4px 0px #2d3436;
+    // -webkit-box-shadow: 1px 2px 4px 0px #2d3436;
+    border: 1px solid #636e72;
     &:hover {
       color: #2d3436;
       background-color: white;
@@ -48,5 +49,12 @@ textarea {
   }
   .tableHelper {
     background-color: #00b894;
+  }
+  .list {
+    background-color: #e84393;
+  }
+  .rules {
+    background-color: #fdcb6e;
+    color: #2d3436;
   }
 }

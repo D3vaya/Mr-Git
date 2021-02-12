@@ -8,30 +8,41 @@
       />&nbsp;Editor Light Md
     </h2>
     <div class="actions mt-4">
-      <button (click)="changeStatusPreview()">
+      <!--<button (click)="changeStatusPreview()">
         <img
-          src="../../../../assets/img/commons/{{ imageStatus }}"
+          src="../../../../assets/img/commons/{{ preview.image }}"
           alt="previewStatus"
           height="20"
         />
+      </button>-->
+      <button class="h ml-1" (click)="copyElement('head', '1')">h1</button>
+      <button class="h ml-1" (click)="copyElement('head', '2')">h2</button>
+      <button class="h ml-1" (click)="copyElement('head', '3')">h3</button>
+      <button class="h ml-1" (click)="copyElement('head', '4')">h4</button>
+      <button class="h ml-1" (click)="copyElement('head', '5')">h5</button>
+      <button class="h ml-1" (click)="copyElement('head', '6')">h6</button>
+      <button class="list ml-1" (click)="copyElement('list', 'list')">
+        lista
       </button>
-      <i class="bi bi-alarm-fill"></i>
-      <button class="ml-1" (click)="setElement('img')">IMG</button>
-      <button class="ml-1" (click)="setElement('imgc')">IMG CENTER</button>
-      <button class="highlight ml-1" (click)="setElement('code')">code</button>
-      <button class="link ml-1" (click)="setElement('link')">link</button>
-      <button class="tableHelper ml-1" (click)="setElement('table')">
+      <button class="ml-1" (click)="copyElement('img', 'inline')">IMG</button>
+      <button class="ml-1" (click)="copyElement('img', 'center')">
+        IMG CENTER
+      </button>
+      <button class="highlight ml-1" (click)="copyElement('code', 'bash')">
+        code
+      </button>
+      <button class="link ml-1" (click)="copyElement('link', 'inline')">
+        link
+      </button>
+      <button class="tableHelper ml-1" (click)="copyElement('table', 'table')">
         table
       </button>
-      <button class="h ml-1" (click)="setElement('head_1')">h1</button>
-      <button class="h ml-1" (click)="setElement('head_2')">h2</button>
-      <button class="h ml-1" (click)="setElement('head_3')">h3</button>
-      <button class="h ml-1" (click)="setElement('head_4')">h4</button>
-      <button class="h ml-1" (click)="setElement('head_5')">h5</button>
-      <button class="h ml-1" (click)="setElement('head_6')">h6</button>
+      <button class="rules ml-1" (click)="copyElementCustom('rules')">
+        --
+      </button>
     </div>
   </div>
-  <div class="col-6 mt-2" *ngIf="!visiblePreview">
+  <div class="col-6 mt-2" *ngIf="!preview.status">
     <textarea
       spellcheck="false"
       lang="{{ config.language }}"
