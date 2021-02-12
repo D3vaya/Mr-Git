@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 // Strategies
-import { Context } from 'src/app/core/models/patterns/strategys/Context';
-import { Strategy } from 'src/app/core/models/patterns/interfaces/Strategy';
+import { Context } from 'src/app/core/models/patterns/editor/strategys/Context';
+import { Strategy } from 'src/app/core/models/patterns/editor/interfaces/Strategy';
 import { environment } from 'src/environments/environment';
-import { CodeStrategy } from 'src/app/core/models/patterns/strategys/CodeStrategy';
-import { LinkStrategy } from 'src/app/core/models/patterns/strategys/LinkStrategy';
-import { ListStrategy } from 'src/app/core/models/patterns/strategys/ListStrategy';
+import { CodeStrategy } from 'src/app/core/models/patterns/editor/strategys/CodeStrategy';
+import { LinkStrategy } from 'src/app/core/models/patterns/editor/strategys/LinkStrategy';
+import { ListStrategy } from 'src/app/core/models/patterns/editor/strategys/ListStrategy';
 import { Configuration } from 'src/app/core/models/configuration.model';
-import { TableStrategy } from 'src/app/core/models/patterns/strategys/TableStrategy';
-import { ImageStrategy } from 'src/app/core/models/patterns/strategys/ImageStrategy';
-import { HeaderStrategy } from 'src/app/core/models/patterns/strategys/HeaderStrategy';
+import { TableStrategy } from 'src/app/core/models/patterns/editor/strategys/TableStrategy';
+import { ImageStrategy } from 'src/app/core/models/patterns/editor/strategys/ImageStrategy';
+import { HeaderStrategy } from 'src/app/core/models/patterns/editor/strategys/HeaderStrategy';
+import { MarkdownService } from 'ngx-markdown';
+
 @Component({
   selector: 'app-typewriter',
   templateUrl: './typewriter.component.html',
@@ -41,7 +43,7 @@ export class TypewriterComponent implements OnInit {
    */
   arrayStrategy: Map<string, Strategy>;
 
-  constructor() {
+  constructor(private md: MarkdownService) {
     this.markdownWriter = '';
     this.initStrategies();
   }
@@ -76,15 +78,23 @@ export class TypewriterComponent implements OnInit {
   /**
    * metodo que ejecuta las estrategias dependiendo de  la acción de la vista
    */
-  copyElement(typeHtmlElment: string, subTypeHtmlElement: string) {
+  copyElement(typeHtmlElment: string, modifierElement: string) {
     this.context.setStrategy(this.arrayStrategy.get(typeHtmlElment));
-    const txt = this.context.executeStrategy(
-      typeHtmlElment,
-      subTypeHtmlElement
-    );
+    const txt = this.context.executeStrategy(modifierElement);
     this.markdownWriter += txt;
   }
   copyElementCustom(type: string) {
     this.markdownWriter += '\n---\n';
+  }
+  tabText(e) {
+    console.log(this.md.compile(this.markdownWriter));
+    if (e.which === 9) {
+      e.preventDefault();
+      var start = e.target.selectionStart;
+      var end = e.target.selectionEnd;
+      console.log(start, '-', end);
+      let val = this.markdownWriter;
+      this.markdownWriter = val.substring(0, start) + '\t' + val.substring(end);
+    }
   }
 }

@@ -44,11 +44,11 @@
   </div>
   <div class="col-6 mt-2" *ngIf="!preview.status">
     <textarea
-      spellcheck="false"
-      lang="{{ config.language }}"
-      class="variable-textarea"
-      id="prueba"
       [(ngModel)]="markdownWriter"
+      (keydown)="tabText($event)"
+      lang="{{ config.language }}"
+      spellcheck="{{ config.spellcheck }}"
+      class="variable-textarea"
     ></textarea>
 
     <!-- <textarea [(ngModel)]="markdownWriter"></textarea> -->
