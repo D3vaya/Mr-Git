@@ -1,20 +1,42 @@
 <div class="row">
   <div class="col-12 mt-5">
-    <h1>Editor</h1>
-    <button (click)="changeStatusPreview()">
+    <h2>
       <img
-        src="../../../../assets/img/commons/{{ imageStatus }}"
-        alt="previewStatus"
-        height="20"
-      />
-    </button>
+        src="../../../../assets/img/commons/editor.svg"
+        alt="editor"
+        height="50"
+      />&nbsp;Editor Light Md
+    </h2>
+    <div class="actions mt-4">
+      <button (click)="changeStatusPreview()">
+        <img
+          src="../../../../assets/img/commons/{{ imageStatus }}"
+          alt="previewStatus"
+          height="20"
+        />
+      </button>
+      <i class="bi bi-alarm-fill"></i>
+      <button class="ml-1" (click)="setElement('img')">IMG</button>
+      <button class="ml-1" (click)="setElement('imgc')">IMG CENTER</button>
+      <button class="highlight ml-1" (click)="setElement('code')">code</button>
+      <button class="link ml-1" (click)="setElement('link')">link</button>
+      <button class="tableHelper ml-1" (click)="setElement('table')">
+        table
+      </button>
+      <button class="h ml-1" (click)="setElement('head_1')">h1</button>
+      <button class="h ml-1" (click)="setElement('head_2')">h2</button>
+      <button class="h ml-1" (click)="setElement('head_3')">h3</button>
+      <button class="h ml-1" (click)="setElement('head_4')">h4</button>
+      <button class="h ml-1" (click)="setElement('head_5')">h5</button>
+      <button class="h ml-1" (click)="setElement('head_6')">h6</button>
+    </div>
   </div>
   <div class="col-6 mt-2" *ngIf="!visiblePreview">
     <textarea
       spellcheck="false"
       lang="{{ config.language }}"
-      w
       class="variable-textarea"
+      id="prueba"
       [(ngModel)]="markdownWriter"
     ></textarea>
 

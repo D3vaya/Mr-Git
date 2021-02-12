@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Configuration } from 'src/app/core/models/configuration.model';
 import { environment } from 'src/environments/environment';
-
+import { EditorUtilitiesService } from '../../../core/services/editor-utilities.service';
 @Component({
   selector: 'app-typewriter',
   templateUrl: './typewriter.component.html',
@@ -12,9 +12,10 @@ export class TypewriterComponent implements OnInit {
   visiblePreview: boolean;
   imageStatus: string;
   config: Configuration = environment.configuration;
-  constructor() {
+  constructor(private editor: EditorUtilitiesService) {
     this.visiblePreview = false;
     this.imageStatus = 'preview.svg';
+    this.markdownWriter = '';
   }
 
   ngOnInit(): void {}
@@ -26,5 +27,9 @@ export class TypewriterComponent implements OnInit {
     } else {
       this.imageStatus = 'preview.svg';
     }
+  }
+  setElement(type: string) {
+    const txt = this.editor.getElement(type);
+    this.markdownWriter += txt;
   }
 }
