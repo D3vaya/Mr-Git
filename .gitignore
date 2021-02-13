@@ -2,8 +2,8 @@
 
 # firebase
 /firebase.json
-/.firebaserc
-/environments/firebase.ts
+.firebaserc
+/src/environments/firebase.ts
 /.firebase
 /.github
 # compiled output
