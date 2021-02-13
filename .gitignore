@@ -2,6 +2,7 @@
 
 # firebase
 /firebase.json
+/.firebaserc
 /environments/firebase.ts
 /.firebase
 /.github
