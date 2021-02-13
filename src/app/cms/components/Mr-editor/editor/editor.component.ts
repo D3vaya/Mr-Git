@@ -12,6 +12,7 @@ export class EditorComponent implements OnInit {
   @Output() currentMarkdown: EventEmitter<string>;
   @Output() editorModeMethodEmitter: EventEmitter<ElementMode>;
   @Output() emitChangeEditorMode: EventEmitter<string>;
+  public previewMode: boolean;
 
   constructor() {
     this.currentMarkdown = new EventEmitter<string>();
@@ -29,5 +30,7 @@ export class EditorComponent implements OnInit {
   changeEditorMode(currentEditorMode: string) {
     this.emitChangeEditorMode.emit(currentEditorMode);
   }
-  changePrevieMode() {}
+  changePrevieMode(emitPreviewMode: boolean) {
+    this.previewMode = emitPreviewMode;
+  }
 }

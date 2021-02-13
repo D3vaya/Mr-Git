@@ -8,6 +8,18 @@
       />&nbsp;Editor Light Md
     </h2>
     <div class="select-mode mt-4 mb-4">
+      <a class="shadow-sm text-decoration-none" (click)="changeStatusPreview()">
+        <img
+          src="../../../../assets/img/commons/{{ preview.image }}"
+          alt="previewStatus"
+          height="70"
+        />
+      </a>
+      <small [class.text-muted]="preview.status" class="ml-3">
+        <strong>{{ preview.description }}</strong>
+      </small>
+    </div>
+    <div class="select-mode mt-4 mb-4" *ngIf="preview.status">
       <a
         class="mode shadow-sm text-decoration-none"
         (click)="changeModeEditor()"
@@ -27,7 +39,7 @@
         <strong>{{ editorSetup.configuration.description }}</strong>
       </small>
     </div>
-    <div class="actions btn-toolbar mb-1">
+    <div class="actions btn-toolbar mb-1" *ngIf="preview.status">
       <div
         class="btn-group"
         role="toolbar"

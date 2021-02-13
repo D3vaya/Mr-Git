@@ -10,7 +10,6 @@ import { ImageStrategy } from '../../components/Mr-editor/patterns/strategys/Ima
 import { HeaderStrategy } from '../../components/Mr-editor/patterns/strategys/HeaderStrategy';
 import { RulesStrategy } from '../../components/Mr-editor/patterns/strategys/RulesStrategy';
 
-import { EditorUtilitiesService } from '../../../core/services/editor-utilities.service';
 import {
   EditorSetup,
   EditorMode,
@@ -26,10 +25,6 @@ export class TypewriterComponent implements OnInit {
    * variable que soportara el markdown para entregarlo al componente
    */
   public markdownWriter: string = '';
-  /**
-   * arreglo de lenguajes de programación para setiar al editor
-   */
-  public codes: Array<{ code: string }>;
 
   /**
    * configuración basica del textarea
@@ -47,7 +42,6 @@ export class TypewriterComponent implements OnInit {
       autoComplete: 'off',
     },
   };
-  public displayMenu = false;
   /**
    * clase contexto que controla la ejexucion de las estrategias
    */
@@ -57,13 +51,11 @@ export class TypewriterComponent implements OnInit {
    */
   mapStrategy: Map<string, Strategy>;
 
-  constructor(private editorUtils: EditorUtilitiesService) {
+  constructor() {
     this.initStrategies();
   }
 
-  ngOnInit(): void {
-    this.getCodeLenguage();
-  }
+  ngOnInit(): void {}
 
   receptMardown(markdownEmitter: string) {
     this.markdownWriter = markdownEmitter;
@@ -98,10 +90,6 @@ export class TypewriterComponent implements OnInit {
     }
   }
 
-  getCodeLenguage(): void {
-    this.codes = this.editorUtils.getLenguage();
-  }
-
   setModeMetod(receptEmitter: ElementMode): void {
     if (this.setup.configuration.mode === EditorMode.CopyPaste) {
       this.copyPasteMode(
@@ -114,13 +102,6 @@ export class TypewriterComponent implements OnInit {
         receptEmitter.modifierElement
       );
     }
-    if (receptEmitter.typeElementHtml === 'code') {
-      this.toggleLenguage();
-    }
-  }
-
-  toggleLenguage(): void {
-    this.displayMenu = !this.displayMenu;
   }
 
   private selectionMode(typeHtmlElment: string, modifierElement: string): void {

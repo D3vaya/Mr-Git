@@ -19,14 +19,14 @@
   button {
     border: none;
     background-color: $bg-white;
-    color: #2d3436;
+    color: map-get($pallete, complement);
+    border-radius: 5px;
     font-weight: bold;
-    padding: 5px;
+    padding: 8px;
     border: 1px solid map-get($pallete, secondary);
     &:hover {
-      background-color: #2d3436;
-
-      color: #fff;
+      background-color: map-get($pallete, secondary);
+      color: map-get($pallete, complement);
     }
   }
   .dropdown-toggle {
