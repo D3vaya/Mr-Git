@@ -11,6 +11,7 @@ export class UtilsService {
   getStatusSidebar$(): Observable<boolean> {
     return this.statusSidebar$.asObservable();
   }
+
   sendStatusSidebar(status: boolean) {
     this.statusSidebar$.next(status);
   }

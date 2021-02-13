@@ -1,20 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Chapter } from 'src/app/core/models/chapter.model';
-
+import { SectionsMenu } from 'src/app/core/models/chapter.model';
 import { CoursesService } from 'src/app/core/services/courses.service';
 import { UtilsService } from 'src/app/core/services/utils.service';
-
+import { sections } from '../../../core/data/menu';
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss'],
+  selector: 'app-sidebar-cms',
+  templateUrl: './sidebar-cms.component.html',
+  styleUrls: ['./sidebar-cms.component.scss'],
 })
-export class SidebarComponent implements OnInit {
-  /**
+export class SidebarCmsComponent implements OnInit {
+  /**s
    * @description arreglo que contiene la estructura de capitulos del curso
    */
-  chapters: Chapter[];
+  sections: SectionsMenu[];
   /**
    * @description observable que esta conectado al cambio del toggle en el header
    */
@@ -45,6 +44,6 @@ export class SidebarComponent implements OnInit {
    * @description Trae el arreglo de capitulos para mostrar en el menu
    */
   getChapters() {
-    this.chapters = this.coursesService.getChapters();
+    this.sections = sections;
   }
 }

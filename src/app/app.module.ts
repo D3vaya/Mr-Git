@@ -17,6 +17,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { PrivateLayoutComponent } from './layouts/private-layout/private-layout.component';
+// AngularFire
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +42,11 @@ import { PrivateLayoutComponent } from './layouts/private-layout/private-layout.
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
     }),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule,
+    AngularFirestoreModule.enablePersistence(),
+    AngularFireAuthModule,
   ],
   providers: [
     {

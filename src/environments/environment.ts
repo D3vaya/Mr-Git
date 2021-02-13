@@ -3,6 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 import { business } from './business';
 import { firebaseConfig } from './firebase';
+// import { firebaseConfig } from './test.firebase';
 export const environment = {
   production: false,
   business: business,

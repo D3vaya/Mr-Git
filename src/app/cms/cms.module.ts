@@ -9,6 +9,12 @@ import { MarkdownModule } from 'ngx-markdown';
 import { TypewriterComponent } from './containers/typewriter/typewriter.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { ToolbarComponent } from './components/Mr-editor/toolbar/toolbar.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CoursesComponent } from './components/courses/courses.component';
+import { SettingComponent } from './components/setting/setting.component';
+import { MaintainersComponent } from './components/maintainers/maintainers.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +23,12 @@ import { ToolbarComponent } from './components/Mr-editor/toolbar/toolbar.compone
     TypewriterComponent,
     SidebarComponent,
     ToolbarComponent,
+    BlogComponent,
+    DashboardComponent,
+    CoursesComponent,
+    SettingComponent,
+    MaintainersComponent,
+    CommentsComponent,
   ],
   imports: [
     FormsModule,

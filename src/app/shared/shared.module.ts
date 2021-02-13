@@ -13,6 +13,9 @@ import { RouterModule } from '@angular/router';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { ScrollDirective } from './directives/scroll.directive';
+import { HeaderCmsComponent } from './components/header-cms/header-cms.component';
+import { SidebarCmsComponent } from './components/sidebar-cms/sidebar-cms.component';
+import { LinkCmsComponent } from './components/link-cms/link-cms.component';
 @NgModule({
   declarations: [
     LinkComponent,
@@ -24,6 +27,9 @@ import { ScrollDirective } from './directives/scroll.directive';
     PageNotFoundComponent,
     ChapterNotFoundComponent,
     ThanksComponent,
+    HeaderCmsComponent,
+    SidebarCmsComponent,
+    LinkCmsComponent,
   ],
   exports: [
     LinkComponent,
@@ -31,6 +37,8 @@ import { ScrollDirective } from './directives/scroll.directive';
     FooterComponent,
     LoadingComponent,
     SidebarComponent,
+    HeaderCmsComponent,
+    SidebarCmsComponent,
     NavCoursesComponent,
     PageNotFoundComponent,
     ChapterNotFoundComponent,
