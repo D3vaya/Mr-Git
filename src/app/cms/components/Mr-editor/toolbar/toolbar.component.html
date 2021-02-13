@@ -1,0 +1,83 @@
+<div class="row">
+  <div class="col">
+    <h2 class="mt-4">
+      <img
+        src="../../../../assets/img/commons/editor.svg"
+        alt="editor"
+        height="50"
+      />&nbsp;Editor Light Md
+    </h2>
+    <div class="select-mode mt-4 mb-4">
+      <a
+        class="mode shadow-sm text-decoration-none"
+        (click)="changeModeEditor()"
+      >
+        Modo&nbsp;<strong class="text-dark mr-2">{{
+          editorSetup.configuration.title
+        }}</strong>
+        <img
+          src="../../../../assets/img/commons/{{
+            editorSetup.configuration.imageMode
+          }}"
+          alt="previewStatus"
+          height="30"
+        />
+      </a>
+      <small class="text-muted ml-3">
+        <strong>{{ editorSetup.configuration.description }}</strong>
+      </small>
+    </div>
+    <div class="actions btn-toolbar mb-1">
+      <div
+        class="btn-group"
+        role="toolbar"
+        aria-label="Toolbar with button groups"
+      >
+        <button class="mr-1" (click)="sendModeMetod('head', '1')">h1</button>
+        <button class="mr-1" (click)="sendModeMetod('head', '2')">h2</button>
+        <button class="mr-1" (click)="sendModeMetod('head', '3')">h3</button>
+        <button class="mr-1" (click)="sendModeMetod('head', '4')">h4</button>
+        <button class="mr-1" (click)="sendModeMetod('head', '5')">h5</button>
+        <button class="mr-1" (click)="sendModeMetod('head', '6')">h6</button>
+        <button class="mr-1" (click)="sendModeMetod('list', 'list')">
+          lista
+        </button>
+        <button class="mr-1" (click)="sendModeMetod('img', 'inline')">
+          IMG
+        </button>
+        <button class="mr-1" (click)="sendModeMetod('img', 'center')">
+          IMG CENTER
+        </button>
+        <button class="mr-1" (click)="sendModeMetod('link', 'inline')">
+          link
+        </button>
+        <button class="mr-1" (click)="sendModeMetod('table', 'table')">
+          table
+        </button>
+        <button class="mr-1" (click)="sendModeMetod('rules', 'rules')">
+          --
+        </button>
+        <div class="btn-group" role="group">
+          <button
+            type="button"
+            class="mr-1 dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            (click)="toggleLenguage()"
+          >
+            code
+          </button>
+          <ul class="dropdown-menu" [ngClass]="{ 'd-block': displayMenu }">
+            <li *ngFor="let item of codes">
+              <a
+                (click)="sendModeMetod('code', item.code)"
+                class="dropdown-item"
+                >{{ item.code }}</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

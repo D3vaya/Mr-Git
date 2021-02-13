@@ -8,7 +8,7 @@ export class HeaderStrategy implements Strategy {
   execute(modifierElement): string {
     let exp = '#'.repeat(Number(modifierElement));
     if (this.format.block) {
-      return '\n' + exp + ' Titulo \n';
+      return '\n' + exp + ' Titulo ';
     }
   }
 }

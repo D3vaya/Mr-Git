@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../cover-page/cover-page.component.scss"
+    ],
+    "names": [],
+    "file": "cover-page.component.min.css"
+}

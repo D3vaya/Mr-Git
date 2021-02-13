@@ -12,6 +12,7 @@ li {
     border-radius: 10px;
     font-size: 1em;
     width: 100%;
+
     &:hover {
       background-color: #d6d4cc;
     }
@@ -26,6 +27,7 @@ li {
   font-weight: bold;
   border: 1px solid transparent;
   font-size: 15px;
+
   &:hover {
     border: 1px solid #413000;
   }
@@ -35,6 +37,7 @@ li {
   &active {
     background-color: white !important;
     border: 1px solid #413000 !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   }
 }
 .submenu li {

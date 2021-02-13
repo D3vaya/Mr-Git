@@ -6,12 +6,12 @@ export class ListStrategy implements Strategy {
   };
   execute(modifierElement: string): string {
     if (this.format.block) {
-      return `\n- Lista
+      return `\n\n - Lista
     - item 1
     - item 2
     - Sublista
       - subitem 1
-      - subitem 2\n`;
+      - subitem 2`;
     }
   }
 }

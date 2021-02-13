@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,QAAQ,CAAC;EACP,UAAU,EAAE,kBAAkB;EAC9B,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "../content-chapter/content-chapter.component.scss",
+        "../../../../assets/styles/lib/_variables.scss"
+    ],
+    "names": [],
+    "file": "content-chapter.component.min.css"
+}

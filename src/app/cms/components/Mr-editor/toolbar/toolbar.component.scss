@@ -1,3 +1,5 @@
+@import "../../../../../assets/styles/lib/variables";
+
 .select-mode {
   .mode {
     padding: 5px;
@@ -11,5 +13,23 @@
       -o-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
       -ms-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
     }
+  }
+}
+.actions {
+  button {
+    border: none;
+    background-color: $bg-white;
+    color: #2d3436;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid map-get($pallete, secondary);
+    &:hover {
+      background-color: #2d3436;
+
+      color: #fff;
+    }
+  }
+  .dropdown-toggle {
+    vertical-align: baseline !important;
   }
 }

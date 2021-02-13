@@ -1,0 +1,12 @@
+.Title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Title h1 {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 3em;
+}
+/*# sourceMappingURL=title-chapter.component.min.css.map */

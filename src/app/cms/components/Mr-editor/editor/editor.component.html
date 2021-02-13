@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-12">
+    <app-toolbar
+      (emitCurrentMode)="changeEditorMode($event)"
+      (emitElementMode)="setModeMetod($event)"
+      [editorSetup]="setup"
+    ></app-toolbar>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-6 col-lx-6">
+    <textarea
+      id="editor"
+      (keyup)="writingMarkdown($event)"
+      [(ngModel)]="markdownEditor"
+      lang="{{ setup.configuration.language }}"
+      placeholder="Ingrese el contenido MarkDown ..."
+      spellcheck="{{ setup.configuration.spellcheck }}"
+      class="variable-textarea"
+    ></textarea>
+  </div>
+  <div class="col-sm-12 col-md-6 col-lg-6 col-lx-6">
+    <app-preview [data]="markdownEditor"></app-preview>
+  </div>
+</div>

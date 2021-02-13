@@ -1,59 +1,11 @@
 <div class="row">
-  <div class="col-12 mt-5">
-    <h2>
-      <img
-        src="../../../../assets/img/commons/editor.svg"
-        alt="editor"
-        height="50"
-      />&nbsp;Editor Light Md
-    </h2>
-    <div class="actions mt-4">
-      <!--<button (click)="changeStatusPreview()">
-        <img
-          src="../../../../assets/img/commons/{{ preview.image }}"
-          alt="previewStatus"
-          height="20"
-        />
-      </button>-->
-      <button class="h ml-1" (click)="copyElement('head', '1')">h1</button>
-      <button class="h ml-1" (click)="copyElement('head', '2')">h2</button>
-      <button class="h ml-1" (click)="copyElement('head', '3')">h3</button>
-      <button class="h ml-1" (click)="copyElement('head', '4')">h4</button>
-      <button class="h ml-1" (click)="copyElement('head', '5')">h5</button>
-      <button class="h ml-1" (click)="copyElement('head', '6')">h6</button>
-      <button class="list ml-1" (click)="copyElement('list', 'list')">
-        lista
-      </button>
-      <button class="ml-1" (click)="copyElement('img', 'inline')">IMG</button>
-      <button class="ml-1" (click)="copyElement('img', 'center')">
-        IMG CENTER
-      </button>
-      <button class="highlight ml-1" (click)="copyElement('code', 'bash')">
-        code
-      </button>
-      <button class="link ml-1" (click)="copyElement('link', 'inline')">
-        link
-      </button>
-      <button class="tableHelper ml-1" (click)="copyElement('table', 'table')">
-        table
-      </button>
-      <button class="rules ml-1" (click)="copyElementCustom('rules')">
-        --
-      </button>
-    </div>
-  </div>
-  <div class="col-6 mt-2" *ngIf="!preview.status">
-    <textarea
-      [(ngModel)]="markdownWriter"
-      (keydown)="tabText($event)"
-      lang="{{ config.language }}"
-      spellcheck="{{ config.spellcheck }}"
-      class="variable-textarea"
-    ></textarea>
-
-    <!-- <textarea [(ngModel)]="markdownWriter"></textarea> -->
-  </div>
-  <div class="col-6 mt-2">
-    <app-preview [data]="markdownWriter"></app-preview>
+  <div class="col-12">
+    <app-editor
+      [markdownEditor]="markdownWriter"
+      (currentMarkdown)="receptMardown($event)"
+      (editorModeMethodEmitter)="setModeMetod($event)"
+      (emitChangeEditorMode)="changeModeEditor($event)"
+      [setup]="setup"
+    ></app-editor>
   </div>
 </div>

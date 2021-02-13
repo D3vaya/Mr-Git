@@ -12,6 +12,7 @@ import { ChapterNotFoundComponent } from './components/chapter-not-found/chapter
 import { RouterModule } from '@angular/router';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ThanksComponent } from './thanks/thanks.component';
+import { ScrollDirective } from './directives/scroll.directive';
 @NgModule({
   declarations: [
     LinkComponent,

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../chapter-container/chapter-container.component.scss"
+    ],
+    "names": [],
+    "file": "chapter-container.component.min.css"
+}

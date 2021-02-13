@@ -4,7 +4,6 @@ export class Context {
 
   setStrategy(strategy: Strategy) {
     this.strategy = strategy;
-    console.log(this.strategy);
   }
 
   executeStrategy(paramsStrategy: string) {
