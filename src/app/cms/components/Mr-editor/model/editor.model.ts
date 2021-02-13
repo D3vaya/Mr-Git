@@ -1,9 +1,6 @@
 import { Configuration } from 'src/app/core/models/configuration.model';
 
-export enum EditorMode {
-  CopyPaste = 'copypaste',
-  Selection = 'selection',
-}
+// INTERFACES
 export interface ElementMode {
   typeElementHtml: string;
   modifierElement: string;
@@ -19,4 +16,11 @@ export interface OptionToolbar {
   images: boolean;
   backgorund: string;
   color: string;
+}
+
+// ENUMS
+
+export enum EditorMode {
+  CopyPaste = 'copypaste',
+  Selection = 'selection',
 }

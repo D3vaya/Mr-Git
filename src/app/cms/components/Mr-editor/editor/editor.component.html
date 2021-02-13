@@ -10,13 +10,13 @@
 
   <div class="col-sm-12 col-md-6 col-lg-6 col-lx-6" *ngIf="!previewMode">
     <textarea
-      id="editor"
       (keyup)="writingMarkdown($event)"
       [(ngModel)]="markdownEditor"
       lang="{{ setup.configuration.language }}"
-      placeholder="Ingrese el contenido MarkDown ..."
       spellcheck="{{ setup.configuration.spellcheck }}"
+      placeholder="Ingrese el contenido MarkDown ..."
       class="variable-textarea"
+      id="editor"
     ></textarea>
   </div>
   <div

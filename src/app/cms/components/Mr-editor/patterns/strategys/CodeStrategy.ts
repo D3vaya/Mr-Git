@@ -15,10 +15,7 @@ export class CodeStrategy implements Strategy {
 
   private initMapLenguages(): Map<string, string> {
     const map = new Map();
-    map.set(
-      'python',
-      'class Complex():\n def __saludo__(self, realpart, imagpart):\n hola = "mundo"'
-    );
+    map.set('python', format.python);
     map.set('bash', 'curl -O "url"');
     map.set('javascript', 'const isMrGit = true');
     map.set('markdown', '# Markdown');

@@ -79,7 +79,7 @@
           >
             code
           </button>
-          <ul class="dropdown-menu" [ngClass]="{ 'd-block': displayMenu }">
+          <ul class="dropdown-menu" [class.d-block]="displayMenu">
             <li *ngFor="let item of codes">
               <a
                 (click)="sendModeMetod('code', item.code)"

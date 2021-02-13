@@ -54,25 +54,28 @@ const html = `<!DOCTYPE html>
 
 </body>
 </html>`;
-const css = `
-body {
+const css = `body {
   background-color: pink;
   color: #ffffff;
   font-family: Arial !important;
 }`;
-const go = `
-package main
+const go = `package main
 
 import "fmt"
 
 func main() {
 	fmt.Println("Hello, 世界")
 }`;
-const java = `
-public static void main(String args[]) {
+const java = `public static void main(String args[]) {
   printLn("hola Mundo!");
 }
 `;
+const python = `class Dog:
+  tricks = []
+  def __init__(self, name):
+      self.name = name
+`;
+
 export const format = {
   table: table,
   mock: mockMarkDown,
@@ -80,4 +83,5 @@ export const format = {
   css: css,
   go: go,
   java: java,
+  python: python,
 };

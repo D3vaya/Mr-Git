@@ -48,6 +48,7 @@ export class ToolbarComponent implements OnInit {
   }
 
   toggleLenguage(): void {
+    console.log('entro');
     this.displayMenu = !this.displayMenu;
   }
 
