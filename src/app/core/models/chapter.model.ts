@@ -6,6 +6,12 @@ export interface Chapter {
   subChapter: Chapter[];
 }
 
+export interface SectionsMenu {
+  path: string;
+  icon: string;
+  title: string;
+}
+
 export interface RouteChapter {
   title: string;
   image: string;

@@ -11,6 +11,7 @@ import { TitleChapterComponent } from './components/title-chapter/title-chapter.
 import { ContentChapterComponent } from './components/content-chapter/content-chapter.component';
 import { HighlightModule } from 'ngx-highlightjs';
 import { MarkdownModule } from 'ngx-markdown';
+
 @NgModule({
   declarations: [
     ChapterContainerComponent,

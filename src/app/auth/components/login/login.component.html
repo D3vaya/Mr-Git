@@ -1,0 +1,40 @@
+<main class="form-signin mt-5 text-center">
+  <form>
+    <img
+      class="mb-4"
+      src="../../../../assets/img/landing/logo.svg"
+      alt="Mr Git"
+      height="80"
+    />
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <input
+      type="email"
+      id="inputEmail"
+      class="form-control"
+      placeholder="Email address"
+      required=""
+      autofocus=""
+    />
+
+    <input
+      type="password"
+      id="inputPassword"
+      class="form-control"
+      placeholder="Password"
+      required=""
+    />
+    <div class="checkbox mb-3">
+      <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+    </div>
+    <button
+      class="w-100 btn btn-lg btn-primary"
+      (click)="login()"
+      type="button"
+    >
+      Sign in
+    </button>
+    <p class="mt-5 mb-3 text-muted">© 2021</p>
+  </form>
+</main>
+<!-- <app-footer></app-footer> -->

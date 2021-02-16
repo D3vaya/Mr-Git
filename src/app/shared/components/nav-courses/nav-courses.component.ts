@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UtilsService } from 'src/app/core/services/utils.service';
-import { Business } from 'src/app/core/models/business';
+import { Business } from 'src/app/core/models/business.model';
 import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-nav-courses',

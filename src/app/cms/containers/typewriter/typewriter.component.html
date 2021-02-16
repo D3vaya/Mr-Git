@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-12">
+    <app-editor
+      [setup]="setup"
+      [markdownEditor]="markdownWriter"
+      (currentMarkdown)="receptMardown($event)"
+      (editorModeMethodEmitter)="setModeMetod($event)"
+      (emitChangeEditorMode)="changeModeEditor($event)"
+    ></app-editor>
+  </div>
+</div>

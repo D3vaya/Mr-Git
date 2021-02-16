@@ -1,0 +1,50 @@
+a.nav-link,
+figure.icon-submenu {
+  display: inline-block;
+}
+li {
+  margin-top: 10px;
+  padding: 2px;
+
+  a.nav-link {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+
+    &:hover {
+      background-color: #d6d4cc;
+    }
+    figure {
+      float: right;
+    }
+  }
+}
+
+.submenu a {
+  display: block;
+  font-weight: bold;
+  border: 1px solid transparent;
+  font-size: 15px;
+
+  &:hover {
+    border: 1px solid #413000;
+  }
+  img {
+    height: 24px !important;
+  }
+  &active {
+    background-color: white !important;
+    border: 1px solid #413000 !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+}
+.submenu li {
+  color: #000;
+  width: 200px !important;
+}
+.active {
+  background-color: white !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}

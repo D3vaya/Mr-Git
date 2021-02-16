@@ -1,0 +1,15 @@
+.select-mode {
+  .mode {
+    padding: 5px;
+    background-color: white;
+
+    color: #2d3436;
+    &:hover {
+      box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+      -moz-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+      -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+      -o-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+      -ms-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    }
+  }
+}

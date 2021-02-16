@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,IAAI;CAOd;;AARD,AAGE,MAHI,CAGJ,EAAE,CAAC;EACD,WAAW,EAAE,IAAI;EACjB,WAAW,EAAE,IAAI;EACjB,SAAS,EAAE,GAAG;CACf",
+    "sources": [
+        "../title-chapter/title-chapter.component.scss"
+    ],
+    "names": [],
+    "file": "title-chapter.component.min.css"
+}

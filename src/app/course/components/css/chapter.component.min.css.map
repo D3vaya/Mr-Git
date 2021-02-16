@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,aAAa,CAAC;EACZ,OAAO,EAAE,cAAc;CACxB;;AACD,AAAA,WAAW,CAAC;EACV,SAAS,EAAE,eAAe;CAC3B",
+    "sources": [
+        "../chapter/chapter.component.scss"
+    ],
+    "names": [],
+    "file": "chapter.component.min.css"
+}

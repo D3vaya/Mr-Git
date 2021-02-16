@@ -1,0 +1,37 @@
+@import "../../../../../assets/styles/lib/variables";
+textarea {
+  width: 100%;
+  height: 70vh;
+  padding: 20px;
+  font-family: "Menlo", "Monaco", monospace;
+  font-size: 15px;
+  background-color: #f8f8f8;
+}
+
+.variable-textarea {
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  min-height: 420px;
+  transition: all 300ms ease-out;
+}
+
+.variable-textarea:hover {
+  box-shadow: 0 6px 12px 3px rgba(0, 0, 0, 0.09),
+    0 2px 3px 1px rgba(0, 0, 0, 0.06);
+}
+
+.actions {
+  button {
+    border: none;
+    background-color: map-get($pallete, secondary);
+    color: #2d3436;
+    border: 1px solid #636e72;
+    &:hover {
+      background-color: #2d3436;
+      color: #fff;
+    }
+  }
+  .dropdown-toggle {
+    vertical-align: baseline !important;
+  }
+}

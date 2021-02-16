@@ -11,7 +11,11 @@ import { MarkdownModule } from 'ngx-markdown';
 import { ChapterNotFoundComponent } from './components/chapter-not-found/chapter-not-found.component';
 import { RouterModule } from '@angular/router';
 import { LoadingComponent } from './components/loading/loading.component';
-import { ThanksComponent } from './thanks/thanks.component';
+import { ThanksComponent } from './components/thanks/thanks.component';
+import { ScrollDirective } from './directives/scroll.directive';
+import { HeaderCmsComponent } from './components/header-cms/header-cms.component';
+import { SidebarCmsComponent } from './components/sidebar-cms/sidebar-cms.component';
+import { LinkCmsComponent } from './components/link-cms/link-cms.component';
 @NgModule({
   declarations: [
     LinkComponent,
@@ -23,6 +27,9 @@ import { ThanksComponent } from './thanks/thanks.component';
     PageNotFoundComponent,
     ChapterNotFoundComponent,
     ThanksComponent,
+    HeaderCmsComponent,
+    SidebarCmsComponent,
+    LinkCmsComponent,
   ],
   exports: [
     LinkComponent,
@@ -30,6 +37,8 @@ import { ThanksComponent } from './thanks/thanks.component';
     FooterComponent,
     LoadingComponent,
     SidebarComponent,
+    HeaderCmsComponent,
+    SidebarCmsComponent,
     NavCoursesComponent,
     PageNotFoundComponent,
     ChapterNotFoundComponent,

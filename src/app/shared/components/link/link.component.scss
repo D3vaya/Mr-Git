@@ -14,7 +14,6 @@ li {
     border-radius: 10px;
     font-size: 1em;
     width: 100%;
-    border: 1px solid transparent;
     &:hover {
       background-color: #d6d4cc;
       border: 1px solid map-get($pallete, complementary);
@@ -30,6 +29,7 @@ li {
   font-weight: bold;
   border: 1px solid transparent;
   font-size: 15px;
+
   &:hover {
     border: 1px solid #413000;
     background-color: white !important;
@@ -40,9 +40,14 @@ li {
   &active {
     background-color: white !important;
     border: 1px solid #413000 !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
   }
 }
 .submenu li {
   color: #000;
   width: 200px !important;
+}
+.active {
+  background-color: white !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
