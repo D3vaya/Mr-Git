@@ -1,6 +1,6 @@
 # Mr Git
 
-Sitio con los conocimientos que he adquirido al pasar de los años con esta tecnología
+Blog con los conocimientos que he adquirido al pasar de los años con esta tecnología
 
 ## Comenzando 🚀
 
