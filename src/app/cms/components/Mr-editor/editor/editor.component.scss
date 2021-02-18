@@ -5,7 +5,10 @@ textarea {
   padding: 20px;
   font-family: "Menlo", "Monaco", monospace;
   font-size: 15px;
-  background-color: #f8f8f8;
+  // background-color: #f8f8f8;
+  background-color: #f9fafa;
+
+  white-space: pre-wrap;
 }
 
 .variable-textarea {
