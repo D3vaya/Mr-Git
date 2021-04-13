@@ -51,26 +51,8 @@ Este proyecto está bajo la Licencia **[Licencia GNU GPLv3](https://choosealicen
 - Cualquier ayuda o sugerencia o contribución es bienvenida
 - Saludos desde 🇨🇱 !!
 
-## Cambia el estilo 🏫
 
-Puedes modificar un poco el estilo del sitio, por si quieres instalarlo en tu compañia, colegio, universidad o donde estimes conveniente. Solo debes modificar el archivo business.ts que esta dentro de la carpeta **/environments**
 
-```typescript
-export const business = {
-  modeBusiness: false, // activa el modo business
-  businessImage: "logo.svg", // nombre del logo corporativo
-  businessColor: "#D6D4CC", // color corporativo
-  businessPath: "assets/img/landing/", // ruta donde almacenara la imagen
-  style: {
-    shadow: true, // activa la sombra del header
-  },
-  sidebar: {
-    colorLink: "#343a40", // color de la fuente de los links del menu
-  },
-};
-```
-
-### Actualmente puedes acceder al sitio y ver los avances en [Mr Git](https://mr-git.org)
 
 ---
 
